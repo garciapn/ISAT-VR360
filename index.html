@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ISAT360 Capstone</title>
+		<meta name="description" content="ISAT 360 VR ~ A-Frame">
+		<!-- Paolo Garcia ISAT Capstone Project -->
+		<!-- files needed: aframe for the aframe components and extras.js for the checkpoints and cursor -->
+		<script src="aframe.js"></script>
+		<script src="extras.js"></script>
+		<script src="text.js"></script>
+	</head>
+	<body>
+	<!-- scene for aframe -->
+		<a-scene>
+			<!-- assests needed -->
+			<a-assets>
+				<!-- extras.js checkpoint call -->
+				<a-mixin id="checkpoint"></a-mixin>
+				
+			</a-assets>
+			
+            <!-- sky for the scene -->
+            <a-sky id="photo1" src="images/photo1.jpg" visible="true"></a-sky>
+            <a-sky id="photo2" src="images/photo2.jpg" visible="false"></a-sky>
+            <a-sky id="photo3" src="images/photo3.jpg" visible="false"></a-sky>
+            <a-sky id="photo4" src="images/photo4.jpg" visible="false"></a-sky>
+            <a-sky id="photo5" src="images/photo5.jpg" visible="false"></a-sky>
+
+            <!-- the cursors for the user -->
+            <a-entity position="0 0 0">
+            	<a-camera universal-controls="movementControls: checkpoint" checkpoint-controls="mode: ">
+            	<a-cursor id="eyes"></a-cursor>
+            	</a-camera>
+            </a-entity>
+			
+            <!-- the checkpoints with their unique id -->
+            <!-- middle checkpoint -->
+            <a-cylinder id="cp1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB82"></a-cylinder>
+            <!-- right checkpoint -->
+			<a-cylinder id="cp2" checkpoint radius="0.5" height="0.001" position="5 .01 0" color="orange"></a-cylinder>
+			<!-- left checkpoint -->
+			<a-cylinder id="cp3" checkpoint radius="0.5" height="0.001" position="-5 .01 0" color="yellow"></a-cylinder>
+			<!-- back checkpoint -->
+			<a-cylinder id="cp4" checkpoint radius="0.5" height="0.001" position="0 .01 5" color="blue"></a-cylinder>
+			<!-- front checkpoint -->
+            <a-cylinder id="cp5" checkpoint radius="0.5" height="0.001" position="0 .01 -5" color="#39BB82"></a-cylinder>
+
+            <!-- text has to be put behind the invisible box for the correct order -->
+
+            <!-- left checkpoint -->
+            <a-entity id="textInfo2" bmfont-text="text: Paolo Garcia
+            ISAT Capstone Project
+            Senior: CS & ISAT
+            garciapn@dukes.jmu.edu" position="7 2 0" color="black" visible="false" rotation="0 -90 0"></a-entity>
+            <a-box id="look2" color="white" depth="2" height ="1" width=".1" position="7.5 2.5 0" opacity="0.1"></a-box>
+
+            <!-- right checkpoint -->
+            <a-entity id="textInfo3" bmfont-text="text: Paolo Garcia
+            ISAT Capstone Project
+            Senior: CS & ISAT
+            garciapn@dukes.jmu.edu" position="-7 2 0" color="black" visible="false" rotation="0 90 0"></a-entity>
+            <a-box id="look3" color="white" depth="2" height ="1" width=".1" position="-7.5 2.5 0" opacity="0.1"></a-box>
+
+            <!-- back checkpoint -->
+            <a-entity id="textInfo4" bmfont-text="text: Paolo Garcia
+            ISAT Capstone Project
+            Senior: CS & ISAT
+            garciapn@dukes.jmu.edu" position="0.3 2 6.8" color="black" visible="false" rotation="0 180 0"></a-entity>
+            <a-box id="look4" color="white" depth="2" height ="1" width=".1" position="0 2.5 6.5" opacity="0.1" rotation="0 90 0"></a-box>
+
+            <!-- front checkpoint -->
+            <a-entity id="textInfo5" bmfont-text="text: Paolo Garcia
+            ISAT Capstone Project
+            Senior: CS & ISAT
+            garciapn@dukes.jmu.edu" position="-0.3 2 -6.8" color="black" visible="false"></a-entity>
+            <a-box id="look5" color="white" depth="2" height ="1" width=".1" position="0 2.5 -6.5" rotation="0 90 0" opacity="0.1"></a-box>
+            
+            <!-- text -->
+            
+		</a-scene>
+
+		<!-- javascript to call the color changes and scene changes -->
+		<script>
+			// checkpoints unique id 
+			var c1 = document.getElementById("cp1");
+			var c2 = document.getElementById("cp2");
+			var c3 = document.getElementById("cp3");
+			var c4 = document.getElementById("cp4");
+			var c5 = document.getElementById("cp5");
+			// cursor call
+			var mainCursor = document.getElementById("eyes");
+
+			//information of the person shown when looking at the invisible box 
+			var text2 = document.getElementById("textInfo2");
+			var box2 = document.getElementById("look2");
+			var text3 = document.getElementById("textInfo3");
+			var box3 = document.getElementById("look3");
+			var text4 = document.getElementById("textInfo4");
+			var box4 = document.getElementById("look4");
+			var text5 = document.getElementById("textInfo5");
+			var box5 = document.getElementById("look5");
+			
+			var bg1 = document.getElementById("photo1");
+			var bg2 = document.getElementById("photo2");
+			var bg3 = document.getElementById("photo3");
+			var bg4 = document.getElementById("photo4");
+			var bg5 = document.getElementById("photo5");
+
+			box2.addEventListener('click', function() {
+				text2.setAttribute('visible', true);
+			})
+			box2.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'purple');
+			})
+			box2.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			box3.addEventListener('click', function() {
+				text3.setAttribute('visible', true);
+			})
+			box3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'purple');
+			})
+			box3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			box4.addEventListener('click', function() {
+				text4.setAttribute('visible', true);
+			})
+			box4.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'purple');
+			})
+			box4.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			box5.addEventListener('click', function() {
+				text5.setAttribute('visible', true);
+			})
+			box5.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'purple');
+			})
+			box5.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+
+			// mouseenter and mouseleave for the color changes
+			c1.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			c1.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			c2.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			c2.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			c3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			c3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			c4.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			c4.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			c5.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			c5.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+
+			//background 360 changes
+			c1.addEventListener("click", function() {
+				bg1.setAttribute("visible", true);
+				bg2.setAttribute("visible", false);
+				bg3.setAttribute("visible", false);
+				bg4.setAttribute("visible", false);
+				bg5.setAttribute("visible", false);
+			})
+			c2.addEventListener("click", function() {
+				bg1.setAttribute("visible", false);
+				bg2.setAttribute("visible", true);
+				bg3.setAttribute("visible", false);
+				bg4.setAttribute("visible", false);
+				bg5.setAttribute("visible", false);
+			})
+			c3.addEventListener("click", function() {
+				bg1.setAttribute("visible", false);
+				bg2.setAttribute("visible", false);
+				bg3.setAttribute("visible", true);
+				bg4.setAttribute("visible", false);
+				bg5.setAttribute("visible", false);
+			})
+			c4.addEventListener("click", function() {
+				bg1.setAttribute("visible", false);
+				bg2.setAttribute("visible", false);
+				bg3.setAttribute("visible", false);
+				bg4.setAttribute("visible", true);
+				bg5.setAttribute("visible", false);
+			})
+			c5.addEventListener("click", function() {
+				bg1.setAttribute("visible", false);
+				bg2.setAttribute("visible", false);
+				bg3.setAttribute("visible", false);
+				bg4.setAttribute("visible", false);
+				bg5.setAttribute("visible", true);
+			})
+		</script>
+	</body>
+</html>			
