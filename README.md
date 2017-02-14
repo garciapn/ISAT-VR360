@@ -3,10 +3,6 @@
 ISAT building Virtual Reality Capstone
 Virtual tour of James Madison University's Integrated Science and Technology Building
 
-# Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
 ## Motivation
 Project was created as a senior capstone for the Department of Integrated Science and Technology
 
