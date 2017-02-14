@@ -21,12 +21,7 @@
 			</a-assets>
 			
             <!-- sky for the scene -->
-            <a-sky id="photo1" src="images/photo1.jpg" visible="true"></a-sky>
-            <a-sky id="photo2" src="images/photo2.jpg" visible="false"></a-sky>
-            <a-sky id="photo3" src="images/photo3.jpg" visible="false"></a-sky>
-            <a-sky id="photo4" src="images/photo4.jpg" visible="false"></a-sky>
-            <a-sky id="photo5" src="images/photo5.jpg" visible="false"></a-sky>
-
+            
             <!-- the cursors for the user -->
             <a-entity position="0 0 0">
             	<a-camera universal-controls="movementControls: checkpoint" checkpoint-controls="mode: ">
@@ -35,183 +30,275 @@
             </a-entity>
 			
             <!-- the checkpoints with their unique id -->
-            <!-- middle checkpoint -->
-            <a-cylinder id="cp1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB82"></a-cylinder>
-            <!-- right checkpoint -->
-			<a-cylinder id="cp2" checkpoint radius="0.5" height="0.001" position="5 .01 0" color="orange"></a-cylinder>
-			<!-- left checkpoint -->
-			<a-cylinder id="cp3" checkpoint radius="0.5" height="0.001" position="-5 .01 0" color="yellow"></a-cylinder>
-			<!-- back checkpoint -->
-			<a-cylinder id="cp4" checkpoint radius="0.5" height="0.001" position="0 .01 5" color="blue"></a-cylinder>
-			<!-- front checkpoint -->
-            <a-cylinder id="cp5" checkpoint radius="0.5" height="0.001" position="0 .01 -5" color="#39BB82"></a-cylinder>
+            <!-- First Floor -->
+            <!-- straight line hallway -->
+            <a-cylinder id="cp1-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-2" checkpoint radius="0.5" height="0.001" position="0 .01 -5" color="#39BB82"></a-cylinder>
+            <a-cylinder id="cp1-3" checkpoint radius="0.5" height="0.001" position="0 .01 -10" color="#39BB82"></a-cylinder>
+            <a-cylinder id="cp1-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-5" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#39BB82"></a-cylinder>
+
+			<!-- left hallway -->
+            <a-cylinder id="cp1-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-7" checkpoint radius="0.5" height="0.001" position="-10 .01 -10" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-8" checkpoint radius="0.5" height="0.001" position="-15 .01 -10" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-9" checkpoint radius="0.5" height="0.001" position="-20 .01 -10" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-10" checkpoint radius="0.5" height="0.001" position="-25 .01 -10" color="#39BB82"></a-cylinder>
+			
+			<!-- Teate and Bentons office hallway-->
+			<a-cylinder id="cp1-11" checkpoint radius="0.5" height="0.001" position="-25 .01 -15" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-12" checkpoint radius="0.5" height="0.001" position="-25 .01 -20" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-13" checkpoint radius="0.5" height="0.001" position="-25 .01 -25" color="#39BB82"></a-cylinder>
+			
+			<!-- hallway of stairs and elevator--> 
+			<a-cylinder id="cp1-14" checkpoint radius="0.5" height="0.001" position="-20 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-15" checkpoint radius="0.5" height="0.001" position="-15 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-16" checkpoint radius="0.5" height="0.001" position="-10 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-17" checkpoint radius="0.5" height="0.001" position="-5 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-18" checkpoint radius="0.5" height="0.001" position="0 .01 -25" color="#39BB82"></a-cylinder>
+
+			<!--Auditorium to the right hallway-->
+			<a-cylinder id="cp1-19" checkpoint radius="0.5" height="0.001" position="8 .01 -10" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#39BB82"></a-cylinder>			
+			<a-cylinder id="cp1-22" checkpoint radius="0.5" height="0.001" position="5 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-23" checkpoint radius="0.5" height="0.001" position="10 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-24" checkpoint radius="0.5" height="0.001" position="15 .01 -25" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#39BB82"></a-cylinder>
+			<a-cylinder id="cp1-27" checkpoint radius="0.5" height="0.001" position="20 .01 -25" color="#39BB82"></a-cylinder>
+			
+			<!-- TEXT OF HHS-->
+			<a-entity id="EnGeo" bmfont-text="text: Engineering & Geoscience
+			--Under Construction--" position="-1 1.5 -32.5" color="black" visible="true"></a-entity>
+			<a-box id="EnGeoBox" color="purple" depth="4" height ="5" width=".05" position="0 1 -32" rotation="0 90 0" opacity=".2"></a-box>
+            
+            <!-- Second Floor -->
+            <!-- straight line hallway -->
+            <a-cylinder id="cp2-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-2" checkpoint radius="0.5" height="0.001" position="0 .01 -5" color="#39BB11" visible="false"></a-cylinder>
+            <a-cylinder id="cp2-3" checkpoint radius="0.5" height="0.001" position="0 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+            <a-cylinder id="cp2-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-5" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#39BB11" visible="false"></a-cylinder>
+
+			<!-- left hallway -->
+            <a-cylinder id="cp2-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-7" checkpoint radius="0.5" height="0.001" position="-10 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-8" checkpoint radius="0.5" height="0.001" position="-15 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-9" checkpoint radius="0.5" height="0.001" position="-20 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-10" checkpoint radius="0.5" height="0.001" position="-25 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			
+			<!-- Teate and Bentons office hallway-->
+			<a-cylinder id="cp2-11" checkpoint radius="0.5" height="0.001" position="-25 .01 -15" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-12" checkpoint radius="0.5" height="0.001" position="-25 .01 -20" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-13" checkpoint radius="0.5" height="0.001" position="-25 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			
+			<!-- hallway of stairs and elevator--> 
+			<a-cylinder id="cp2-14" checkpoint radius="0.5" height="0.001" position="-20 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-15" checkpoint radius="0.5" height="0.001" position="-15 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-16" checkpoint radius="0.5" height="0.001" position="-10 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-17" checkpoint radius="0.5" height="0.001" position="-5 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-18" checkpoint radius="0.5" height="0.001" position="0 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+
+			<!--Auditorium to the right hallway-->
+			<a-cylinder id="cp2-19" checkpoint radius="0.5" height="0.001" position="8 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-22" checkpoint radius="0.5" height="0.001" position="5 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-23" checkpoint radius="0.5" height="0.001" position="10 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-24" checkpoint radius="0.5" height="0.001" position="15 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#39BB11" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-27" checkpoint radius="0.5" height="0.001" position="20 .01 -25" color="#39BB11" visible="false"></a-cylinder>
+			
+			<!-- third Floor -->
+            <!-- straight line hallway -->
+            <a-cylinder id="cp3-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-2" checkpoint radius="0.5" height="0.001" position="0 .01 -5" color="#2B60DE" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-3" checkpoint radius="0.5" height="0.001" position="0 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-5" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#2B60DE" visible="false"></a-cylinder>
+
+			<!-- left hallway -->
+            <a-cylinder id="cp3-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-7" checkpoint radius="0.5" height="0.001" position="-10 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-8" checkpoint radius="0.5" height="0.001" position="-15 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-9" checkpoint radius="0.5" height="0.001" position="-20 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-10" checkpoint radius="0.5" height="0.001" position="-25 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			
+			<!-- Teate and Bentons office hallway-->
+			<a-cylinder id="cp3-11" checkpoint radius="0.5" height="0.001" position="-25 .01 -15" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-12" checkpoint radius="0.5" height="0.001" position="-25 .01 -20" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-13" checkpoint radius="0.5" height="0.001" position="-25 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			
+			<!-- hallway of stairs and elevator--> 
+			<a-cylinder id="cp3-14" checkpoint radius="0.5" height="0.001" position="-20 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-15" checkpoint radius="0.5" height="0.001" position="-15 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-16" checkpoint radius="0.5" height="0.001" position="-10 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-17" checkpoint radius="0.5" height="0.001" position="-5 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-18" checkpoint radius="0.5" height="0.001" position="0 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+
+			<!--Auditorium to the right hallway-->
+			<a-cylinder id="cp3-19" checkpoint radius="0.5" height="0.001" position="8 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-22" checkpoint radius="0.5" height="0.001" position="5 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-23" checkpoint radius="0.5" height="0.001" position="10 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-24" checkpoint radius="0.5" height="0.001" position="15 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-27" checkpoint radius="0.5" height="0.001" position="20 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			
+            <!-- ISAT VR LOGO -->
+			
+
+			<!-- Second Floor --> 
+			<!-- Third Floor -->
+
+			<!-- Stairs -->
+			<a-box id="stairs-1" color="#39BB82" depth="2" height ="2" width=".1" position="-3 1 -5" opacity="1" visible="true"></a-box>
+
+			<a-box id="stairs-2" color="#39BB11" depth="2" height ="2" width=".1" position="-3 1 -5" opacity="1" visible="false"></a-box>
+
+			<!-- Elevator to go down -->
+			<a-box id="elevator-2" color="#39BB11" depth="2" height ="2" width=".1" position="3 1 -5" opacity="1" visible="false"></a-box>
+
+			<a-box id="elevator-3" color="#2B60DE" depth="2" height ="2" width=".1" position="3 1 -5" opacity="1" visible="false"></a-box>
 
             <!-- text has to be put behind the invisible box for the correct order -->
 
-            <!-- left checkpoint -->
-            <a-entity id="textInfo2" bmfont-text="text: Paolo Garcia
-            ISAT Capstone Project
-            Senior: CS & ISAT
-            garciapn@dukes.jmu.edu" position="7 2 0" color="black" visible="false" rotation="0 -90 0"></a-entity>
-            <a-box id="look2" color="white" depth="2" height ="1" width=".1" position="7.5 2.5 0" opacity="0.1"></a-box>
+            <!-- back checkpoint 
+            <a-entity id="altaii" bmfont-text="text: Karim Altaii, Ph.D." position="0.3 2 2.7" color="black" visible="true" rotation="0 180 0"></a-entity>
 
-            <!-- right checkpoint -->
-            <a-entity id="textInfo3" bmfont-text="text: Paolo Garcia
-            ISAT Capstone Project
-            Senior: CS & ISAT
-            garciapn@dukes.jmu.edu" position="-7 2 0" color="black" visible="false" rotation="0 90 0"></a-entity>
-            <a-box id="look3" color="white" depth="2" height ="1" width=".1" position="-7.5 2.5 0" opacity="0.1"></a-box>
+            <a-box id="look1" color="white" depth="2" height ="1" width=".1" position="0 2.5 2.5" opacity="0.1" rotation="0 90 0"></a-box>-->
 
-            <!-- back checkpoint -->
-            <a-entity id="textInfo4" bmfont-text="text: Paolo Garcia
-            ISAT Capstone Project
-            Senior: CS & ISAT
-            garciapn@dukes.jmu.edu" position="0.3 2 6.8" color="black" visible="false" rotation="0 180 0"></a-entity>
-            <a-box id="look4" color="white" depth="2" height ="1" width=".1" position="0 2.5 6.5" opacity="0.1" rotation="0 90 0"></a-box>
-
-            <!-- front checkpoint -->
-            <a-entity id="textInfo5" bmfont-text="text: Paolo Garcia
-            ISAT Capstone Project
-            Senior: CS & ISAT
-            garciapn@dukes.jmu.edu" position="-0.3 2 -6.8" color="black" visible="false"></a-entity>
-            <a-box id="look5" color="white" depth="2" height ="1" width=".1" position="0 2.5 -6.5" rotation="0 90 0" opacity="0.1"></a-box>
-            
-            <!-- text -->
             
 		</a-scene>
 
 		<!-- javascript to call the color changes and scene changes -->
 		<script>
-			// checkpoints unique id 
-			var c1 = document.getElementById("cp1");
-			var c2 = document.getElementById("cp2");
-			var c3 = document.getElementById("cp3");
-			var c4 = document.getElementById("cp4");
-			var c5 = document.getElementById("cp5");
 			// cursor call
 			var mainCursor = document.getElementById("eyes");
-
-			//information of the person shown when looking at the invisible box 
-			var text2 = document.getElementById("textInfo2");
-			var box2 = document.getElementById("look2");
-			var text3 = document.getElementById("textInfo3");
-			var box3 = document.getElementById("look3");
-			var text4 = document.getElementById("textInfo4");
-			var box4 = document.getElementById("look4");
-			var text5 = document.getElementById("textInfo5");
-			var box5 = document.getElementById("look5");
-			
-			var bg1 = document.getElementById("photo1");
-			var bg2 = document.getElementById("photo2");
-			var bg3 = document.getElementById("photo3");
-			var bg4 = document.getElementById("photo4");
-			var bg5 = document.getElementById("photo5");
-
-			box2.addEventListener('click', function() {
-				text2.setAttribute('visible', true);
-			})
-			box2.addEventListener('mouseenter', function() {
-				mainCursor.setAttribute('color', 'purple');
-			})
-			box2.addEventListener('mouseleave', function() {
-				mainCursor.setAttribute('color', 'black');
-			})
-			box3.addEventListener('click', function() {
-				text3.setAttribute('visible', true);
-			})
-			box3.addEventListener('mouseenter', function() {
-				mainCursor.setAttribute('color', 'purple');
-			})
-			box3.addEventListener('mouseleave', function() {
-				mainCursor.setAttribute('color', 'black');
-			})
-			box4.addEventListener('click', function() {
-				text4.setAttribute('visible', true);
-			})
-			box4.addEventListener('mouseenter', function() {
-				mainCursor.setAttribute('color', 'purple');
-			})
-			box4.addEventListener('mouseleave', function() {
-				mainCursor.setAttribute('color', 'black');
-			})
-			box5.addEventListener('click', function() {
-				text5.setAttribute('visible', true);
-			})
-			box5.addEventListener('mouseenter', function() {
-				mainCursor.setAttribute('color', 'purple');
-			})
-			box5.addEventListener('mouseleave', function() {
-				mainCursor.setAttribute('color', 'black');
-			})
+			var stairs1 = document.getElementById(("stairs-1"));
+			var stairs2 = document.getElementById(("stairs-2"));
+			var elevator2 = document.getElementById(("elevator-2"));
+			var elevator3 = document.getElementById(("elevator-3"));
 
 			// mouseenter and mouseleave for the color changes
-			c1.addEventListener('mouseenter', function() {
+			for (i = 1; i < 28; i++) {
+				var checkpoint = document.getElementById(("cp1-" + i))
+    			checkpoint.addEventListener('mouseenter', function() {
+					mainCursor.setAttribute('color', 'yellow');
+				})
+				checkpoint.addEventListener('mouseleave', function() {
+					mainCursor.setAttribute('color', 'black');
+				})
+			}
+
+				
+			stairs1.addEventListener('mouseenter', function() {
 				mainCursor.setAttribute('color', 'yellow');
 			})
-			c1.addEventListener('mouseleave', function() {
+			stairs1.addEventListener('mouseleave', function() {
 				mainCursor.setAttribute('color', 'black');
 			})
-			c2.addEventListener('mouseenter', function() {
+			stairs2.addEventListener('mouseenter', function() {
 				mainCursor.setAttribute('color', 'yellow');
 			})
-			c2.addEventListener('mouseleave', function() {
+			stairs2.addEventListener('mouseleave', function() {
 				mainCursor.setAttribute('color', 'black');
 			})
-			c3.addEventListener('mouseenter', function() {
+			elevator2.addEventListener('mouseenter', function() {
 				mainCursor.setAttribute('color', 'yellow');
 			})
-			c3.addEventListener('mouseleave', function() {
+			elevator2.addEventListener('mouseleave', function() {
 				mainCursor.setAttribute('color', 'black');
 			})
-			c4.addEventListener('mouseenter', function() {
+			elevator3.addEventListener('mouseenter', function() {
 				mainCursor.setAttribute('color', 'yellow');
 			})
-			c4.addEventListener('mouseleave', function() {
-				mainCursor.setAttribute('color', 'black');
-			})
-			c5.addEventListener('mouseenter', function() {
-				mainCursor.setAttribute('color', 'yellow');
-			})
-			c5.addEventListener('mouseleave', function() {
+			elevator3.addEventListener('mouseleave', function() {
 				mainCursor.setAttribute('color', 'black');
 			})
 
-			//background 360 changes
-			c1.addEventListener("click", function() {
-				bg1.setAttribute("visible", true);
-				bg2.setAttribute("visible", false);
-				bg3.setAttribute("visible", false);
-				bg4.setAttribute("visible", false);
-				bg5.setAttribute("visible", false);
+			stairs1.addEventListener("click", function() {
+				for (j = 1; j < 28; j++) {
+					var checkpointFirstFloor = document.getElementById(("cp1-" + j))
+					var checkpointSecondFloor = document.getElementById(("cp2-" + j))
+					checkpointFirstFloor.setAttribute('visible', 'false');
+					checkpointSecondFloor.setAttribute('visible', 'true');
+				}
+				stairs1.setAttribute('visible', 'false');
+				stairs2.setAttribute('visible', 'true');
+				elevator2.setAttribute('visible', 'true');
+				elevator3.setAttribute('visible', 'false');
 			})
-			c2.addEventListener("click", function() {
-				bg1.setAttribute("visible", false);
-				bg2.setAttribute("visible", true);
-				bg3.setAttribute("visible", false);
-				bg4.setAttribute("visible", false);
-				bg5.setAttribute("visible", false);
+
+			for (z = 1; z < 28; z++) {
+				var checkpoint = document.getElementById(("cp2-" + z))
+				checkpoint.addEventListener('mouseenter', function() {
+					mainCursor.setAttribute('color', 'yellow');
+				})
+				checkpoint.addEventListener('mouseleave', function() {
+					mainCursor.setAttribute('color', 'black');
+				})
+			}
+
+			stairs2.addEventListener("click", function() {
+				for (k = 1; k < 28; k++) {
+					var checkpointFirstFloor = document.getElementById(("cp1-" + k))
+					var checkpointSecondFloor = document.getElementById(("cp2-" + k))
+					var checkpointThirdfloor = document.getElementById(("cp3-" + k))
+					checkpointFirstFloor.setAttribute('visible', 'false');
+					checkpointSecondFloor.setAttribute('visible', 'false');
+					checkpointThirdfloor.setAttribute('visible', 'true');
+					
+				}
+				stairs1.setAttribute('visible', 'false');
+				stairs2.setAttribute('visible', 'false');
+				elevator2.setAttribute('visible', 'false');
+				elevator3.setAttribute('visible', 'true');
 			})
-			c3.addEventListener("click", function() {
-				bg1.setAttribute("visible", false);
-				bg2.setAttribute("visible", false);
-				bg3.setAttribute("visible", true);
-				bg4.setAttribute("visible", false);
-				bg5.setAttribute("visible", false);
+
+			for (p = 1; p < 28; p++) {
+				var checkpoint = document.getElementById(("cp3-" + p))
+				checkpoint.addEventListener('mouseenter', function() {
+					mainCursor.setAttribute('color', 'yellow');
+				})
+				checkpoint.addEventListener('mouseleave', function() {
+					mainCursor.setAttribute('color', 'black');
+				})
+			}
+
+			elevator2.addEventListener("click", function() {
+				for (r = 1; r < 28; r++) {
+					var checkpointFirstFloor = document.getElementById(("cp1-" + r))
+					var checkpointSecondFloor = document.getElementById(("cp2-" + r))
+					checkpointFirstFloor.setAttribute('visible', 'true');
+					checkpointSecondFloor.setAttribute('visible', 'false');
+				}
+				stairs1.setAttribute('visible', 'true');
+				stairs2.setAttribute('visible', 'false');
+				elevator2.setAttribute('visible', 'false');
+				elevator3.setAttribute('visible', 'false');
 			})
-			c4.addEventListener("click", function() {
-				bg1.setAttribute("visible", false);
-				bg2.setAttribute("visible", false);
-				bg3.setAttribute("visible", false);
-				bg4.setAttribute("visible", true);
-				bg5.setAttribute("visible", false);
+
+			elevator3.addEventListener("click", function() {
+				for (s = 1; s < 28; s++) {
+					var checkpointFirstFloor = document.getElementById(("cp1-" + s))
+					var checkpointSecondFloor = document.getElementById(("cp2-" + s))
+					var checkpointThirdfloor = document.getElementById(("cp3-" + s))
+					checkpointFirstFloor.setAttribute('visible', 'false');
+					checkpointSecondFloor.setAttribute('visible', 'true');
+					checkpointThirdfloor.setAttribute('visible', 'false');
+					
+				}
+				stairs1.setAttribute('visible', 'false');
+				stairs2.setAttribute('visible', 'true');
+				elevator2.setAttribute('visible', 'true');
+				elevator3.setAttribute('visible', 'false');
 			})
-			c5.addEventListener("click", function() {
-				bg1.setAttribute("visible", false);
-				bg2.setAttribute("visible", false);
-				bg3.setAttribute("visible", false);
-				bg4.setAttribute("visible", false);
-				bg5.setAttribute("visible", true);
-			})
+
 		</script>
 	</body>
 </html>			
