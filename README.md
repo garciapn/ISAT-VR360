@@ -1,5 +1,5 @@
-## ISAT-VR360
-# Synopsis
+# ISAT-VR360
+## Synopsis
 ISAT building Virtual Reality Capstone
 Virtual tour of James Madison University's Integrated Science and Technology Building
 
@@ -13,16 +13,16 @@ https://github.com/aframevr/aframe/
 Code, test, and play around. 
 
 ## Install ISAT-VR360
--clone or download zip
--open terminal
--type "npm install http-server -g" to install node globally
--go to the file "ISAT-VR360"
--type "http-server"
--open Google Chrome and use the given ip address
+- clone or download zip
+- open terminal
+- type "npm install http-server -g" to install node globally
+- go to the file "ISAT-VR360"
+- type "http-server"
+- open Google Chrome and use the given ip address
 
 ## Contributors
-Development of website, aframe design, iOS application - Paolo Garcia
-Development of android application - Anthony Teate
+- Development of website, aframe design, iOS application - Paolo Garcia
+- Development of android application - Anthony Teate
 
 ## The MIT License
 Copyright 2017 Paolo Garcia
