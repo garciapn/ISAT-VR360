@@ -195,7 +195,7 @@
 				})
 			}
 
-				
+			// look and click stairs or elevator 
 			stairs1.addEventListener('mouseenter', function() {
 				mainCursor.setAttribute('color', 'yellow');
 			})
@@ -282,7 +282,7 @@
 				elevator2.setAttribute('visible', 'false');
 				elevator3.setAttribute('visible', 'false');
 			})
-
+			
 			elevator3.addEventListener("click", function() {
 				for (s = 1; s < 28; s++) {
 					var checkpointFirstFloor = document.getElementById(("cp1-" + s))
