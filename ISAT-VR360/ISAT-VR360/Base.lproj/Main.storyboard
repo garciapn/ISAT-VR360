@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="916" y="8.5457271364317844"/>
         </scene>
-        <!--View Controller-->
+        <!--Instructions View-->
         <scene sceneID="cZt-SQ-d9S">
             <objects>
-                <viewController id="ZqB-IR-qJA" sceneMemberID="viewController">
+                <viewController id="ZqB-IR-qJA" customClass="instructionsView" customModule="ISAT_VR360" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UN9-cs-cF9"/>
                         <viewControllerLayoutGuide type="bottom" id="5pK-nG-xYW"/>
@@ -194,6 +194,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="mZh-6A-EjE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6q-ic-K67">
+                                <rect key="frame" x="16" y="186" width="352" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">ISAT VR 360 gives the user a virtual tour of James Madison University's Integrated Science and Technology building. This project was created as a senior capstone for the Department of Integrated Science and Technology to allow users to tour ISAT, visit professor's office and get their contact information (email, telephone number, and/or office hours</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.91764705879999997" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

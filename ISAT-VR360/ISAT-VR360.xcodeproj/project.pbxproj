@@ -15,6 +15,7 @@
 		41047ABE1E5CCDB0006F46F2 /* ISAT_VR360Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41047ABD1E5CCDB0006F46F2 /* ISAT_VR360Tests.swift */; };
 		41047AC91E5CCDB0006F46F2 /* ISAT_VR360UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41047AC81E5CCDB0006F46F2 /* ISAT_VR360UITests.swift */; };
 		41047AD71E5CD0B2006F46F2 /* vrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41047AD61E5CD0B2006F46F2 /* vrView.swift */; };
+		41047AD91E5CDF33006F46F2 /* instructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41047AD81E5CDF33006F46F2 /* instructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		41047AC81E5CCDB0006F46F2 /* ISAT_VR360UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISAT_VR360UITests.swift; sourceTree = "<group>"; };
 		41047ACA1E5CCDB0006F46F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41047AD61E5CD0B2006F46F2 /* vrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vrView.swift; sourceTree = "<group>"; };
+		41047AD81E5CDF33006F46F2 /* instructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				41047AAA1E5CCDAF006F46F2 /* ViewController.swift */,
 				41047AAC1E5CCDAF006F46F2 /* Main.storyboard */,
 				41047AD61E5CD0B2006F46F2 /* vrView.swift */,
+				41047AD81E5CDF33006F46F2 /* instructionsView.swift */,
 				41047AAF1E5CCDAF006F46F2 /* Assets.xcassets */,
 				41047AB11E5CCDAF006F46F2 /* LaunchScreen.storyboard */,
 				41047AB41E5CCDAF006F46F2 /* Info.plist */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41047AAB1E5CCDAF006F46F2 /* ViewController.swift in Sources */,
+				41047AD91E5CDF33006F46F2 /* instructionsView.swift in Sources */,
 				41047AA91E5CCDAF006F46F2 /* AppDelegate.swift in Sources */,
 				41047AD71E5CD0B2006F46F2 /* vrView.swift in Sources */,
 			);
@@ -510,6 +514,7 @@
 				41047ACF1E5CCDB0006F46F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41047AD01E5CCDB0006F46F2 /* Build configuration list for PBXNativeTarget "ISAT-VR360Tests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +523,7 @@
 				41047AD21E5CCDB0006F46F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41047AD31E5CCDB0006F46F2 /* Build configuration list for PBXNativeTarget "ISAT-VR360UITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +532,7 @@
 				41047AD51E5CCDB0006F46F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
