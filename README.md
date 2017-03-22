@@ -2,7 +2,7 @@
 ## Synopsis
 ISAT building Virtual Reality Capstone
 Virtual tour of James Madison University's Integrated Science and Technology Building
-
+Website: https://isatvr360.wordpress.com/
 ## Motivation
 Project was created as a senior capstone for the Department of Integrated Science and Technology
 
