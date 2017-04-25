@@ -15,7 +15,7 @@ class vrView: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.delegate = self
-        let webUrl : NSURL = NSURL(string: "http://127.0.0.1:8080")!
+        let webUrl : NSURL = NSURL(string: "https://s3.amazonaws.com/isat-vr-360/index.html")!
         let webRequest: NSURLRequest = NSURLRequest(url: webUrl as URL)
         webView.loadRequest(webRequest as URLRequest)
         
