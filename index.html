@@ -24,7 +24,7 @@
             <!-- the cursors for the user -->
             <a-entity position="0 0 0">
             	<a-camera universal-controls="movementControls: checkpoint" checkpoint-controls="mode: ">
-            	<a-cursor id="eyes"></a-cursor>
+            	<a-cursor id="eyes" fuse="true" fuseTimeout="2000"></a-cursor>
             	</a-camera>
             </a-entity>
 			
@@ -151,7 +151,6 @@
 			
             <!-- ISAT VR LOGO -->
 			
-
 			<!-- Stairs -->
 			<a-box id="stairs-1" color="#39BB82" depth="2" height ="2" width=".1" position="-3 1 -5" opacity="1" visible="true"></a-box>
 
@@ -163,13 +162,10 @@
 			<a-box id="elevator-3" color="#2B60DE" depth="2" height ="2" width=".1" position="3 1 -5" opacity="1" visible="false"></a-box>
 
             <!-- text has to be put behind the invisible box for the correct order -->
-
             <!-- back checkpoint 
             <a-entity id="altaii" bmfont-text="text: Karim Altaii, Ph.D." position="0.3 2 2.7" color="black" visible="true" rotation="0 180 0"></a-entity>
-
             <a-box id="look1" color="white" depth="2" height ="1" width=".1" position="0 2.5 2.5" opacity="0.1" rotation="0 90 0"></a-box>-->
 
-            
 		</a-scene>
 
 		<!-- javascript to call the color changes and scene changes -->
