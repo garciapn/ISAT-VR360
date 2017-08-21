@@ -17,6 +17,7 @@
 		41047AD71E5CD0B2006F46F2 /* vrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41047AD61E5CD0B2006F46F2 /* vrView.swift */; };
 		41047AD91E5CDF33006F46F2 /* instructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41047AD81E5CDF33006F46F2 /* instructionsView.swift */; };
 		41216C8C1EA7DE4A002A531A /* light-blue-abstract-background_1077-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41216C8B1EA7DE4A002A531A /* light-blue-abstract-background_1077-3.jpg */; };
+		417DC8CE1EB1367F006A4FE3 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417DC8CD1EB1367F006A4FE3 /* header.jpg */; };
 		4194CE8E1E82DB6400A26AB0 /* iSAT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4194CE8D1E82DB6400A26AB0 /* iSAT.jpg */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		41047AD61E5CD0B2006F46F2 /* vrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vrView.swift; sourceTree = "<group>"; };
 		41047AD81E5CDF33006F46F2 /* instructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instructionsView.swift; sourceTree = "<group>"; };
 		41216C8B1EA7DE4A002A531A /* light-blue-abstract-background_1077-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "light-blue-abstract-background_1077-3.jpg"; path = "../../../../../Downloads/light-blue-abstract-background_1077-3.jpg"; sourceTree = "<group>"; };
+		417DC8CD1EB1367F006A4FE3 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
 		4194CE8D1E82DB6400A26AB0 /* iSAT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iSAT.jpg; path = ../../../../../Pictures/iSAT.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,14 +107,15 @@
 		41047AA71E5CCDAF006F46F2 /* ISAT-VR360 */ = {
 			isa = PBXGroup;
 			children = (
+				41216C8B1EA7DE4A002A531A /* light-blue-abstract-background_1077-3.jpg */,
+				417DC8CD1EB1367F006A4FE3 /* header.jpg */,
+				4194CE8D1E82DB6400A26AB0 /* iSAT.jpg */,
 				41047AA81E5CCDAF006F46F2 /* AppDelegate.swift */,
 				41047AAA1E5CCDAF006F46F2 /* ViewController.swift */,
 				41047AAC1E5CCDAF006F46F2 /* Main.storyboard */,
-				41216C8B1EA7DE4A002A531A /* light-blue-abstract-background_1077-3.jpg */,
 				41047AD61E5CD0B2006F46F2 /* vrView.swift */,
 				41047AD81E5CDF33006F46F2 /* instructionsView.swift */,
 				41047AAF1E5CCDAF006F46F2 /* Assets.xcassets */,
-				4194CE8D1E82DB6400A26AB0 /* iSAT.jpg */,
 				41047AB11E5CCDAF006F46F2 /* LaunchScreen.storyboard */,
 				41047AB41E5CCDAF006F46F2 /* Info.plist */,
 			);
@@ -247,6 +250,7 @@
 			files = (
 				4194CE8E1E82DB6400A26AB0 /* iSAT.jpg in Resources */,
 				41216C8C1EA7DE4A002A531A /* light-blue-abstract-background_1077-3.jpg in Resources */,
+				417DC8CE1EB1367F006A4FE3 /* header.jpg in Resources */,
 				41047AB31E5CCDAF006F46F2 /* LaunchScreen.storyboard in Resources */,
 				41047AB01E5CCDAF006F46F2 /* Assets.xcassets in Resources */,
 				41047AAE1E5CCDAF006F46F2 /* Main.storyboard in Resources */,
@@ -433,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PNGapps.ISAT-VR360";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PNGapps.ISAT-VR360";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -9,17 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var viewVRButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var instructionButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        viewVRButton.layer.cornerRadius = 10
+        infoButton.layer.cornerRadius = 10
+        instructionButton.layer.cornerRadius = 10
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
