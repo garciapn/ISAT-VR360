@@ -14,11 +14,12 @@ Code, test, and play around.
 
 ## Install ISAT-VR360
 - clone or download zip
-- open terminal
+- open terminal, sudo apt install npm
 - type "npm install http-server -g" to install node globally
 - go to the file "ISAT-VR360"
 - type "http-server"
 - open Google Chrome and use the given ip address
+- walk around/test
 
 ## Contributors
 - Development of website, aframe design, iOS application - Paolo Garcia
