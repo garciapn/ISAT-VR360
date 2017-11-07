@@ -4,7 +4,7 @@ module.exports = {
   schema: {
     enabled: {default: true},
     mode: {default: 'teleport', oneOf: ['teleport', 'animate']},
-    animateSpeed: {default: 3.0}
+    animateSpeed: {default: 2.0}
   },
 
   init: function () {
