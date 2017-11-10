@@ -26,7 +26,7 @@
             <!-- Straight hallway -->
             <a-sky id="bg1-1" src="Images/R0010002.JPG" rotation="-2 85 0" visible="true"></a-sky>
             <a-sky id="bg2-1" src="Images/R0010003.JPG" rotation="1 90 0" visible="false"></a-sky>
-            <a-sky id="bg3-1" src="Images/R0010004.JPG" rotation="2.5 93 0" visible="false"></a-sky>
+            <a-sky id="bg3-1" src="Images/R0010004.JPG" rotation="1 93 0" visible="false"></a-sky>
             <a-sky id="bg4-1" src="Images/R0010005.JPG" rotation="0 83 0" visible="false"></a-sky>
             <a-sky id="bg5-1" src="Images/R0010006.JPG" rotation="0 90 0" visible="false"></a-sky>
             <a-sky id="bg6-1" src="Images/R0010007.JPG" rotation="0 90 0" visible="false"></a-sky>
@@ -46,10 +46,24 @@
 			<a-sky id="bg14-1" src="Images/R0010015.JPG" rotation="1 5 0" visible="false"></a-sky> 
 			<a-sky id="bg15-1" src="Images/R0010016.JPG" rotation="1 4 0" visible="false"></a-sky>
 			<a-sky id="bg16-1" src="Images/R0010017.JPG" rotation="0 4 0" visible="false"></a-sky>
-			<a-sky id="bg17-1" src="Images/R0010018.JPG" rotation="0 4 0" visible="false"></a-sky>
-			<a-sky id="bg18-1" src="Images/R0010019.JPG" rotation="0 4 0" visible="false"></a-sky>
+			<a-sky id="bg17-1" src="Images/R0010018.JPG" rotation="0 2 0" visible="false"></a-sky>
+			<a-sky id="bg18-1" src="Images/R0010019.JPG" rotation="0 0 0" visible="false"></a-sky>
 			
+			<!-- right hallway -->
+			<a-sky id="bg19-1" src="Images/R0010020.JPG" rotation="1 4 1.5" visible="false"></a-sky>
+			<a-sky id="bg20-1" src="Images/R0010021.JPG" rotation="1 4 1.5" visible="false"></a-sky>
+			<a-sky id="bg21-1" src="Images/R0010022.JPG" rotation="1 4 1.5" visible="false"></a-sky> 
+			<!-- corner -->
+			<a-sky id="bg22-1" src="Images/R0010023.JPG" rotation="1 4 1.5" visible="false"></a-sky>
 
+			<!-- back right hallway -->
+			<a-sky id="bg23-1" src="Images/R0010024.JPG" rotation="2 90 1.5" visible="false"></a-sky> 
+			<a-sky id="bg24-1" src="Images/R0010025.JPG" rotation="2 90 1.5" visible="false"></a-sky>  
+			<a-sky id="bg25-1" src="Images/R0010026.JPG" rotation="2 170 1.5" visible="false"></a-sky>
+
+			<!-- aditorium -->
+			<a-sky id="bg26-1" src="Images/R0010027.JPG" rotation="2 170 1.5" visible="false"></a-sky> 
+			<a-sky id="bg27-1" src="Images/R0010028.JPG" rotation="2 170 1.5" visible="false"></a-sky>
 
             <!-- the cursors for the user -->
             <a-entity position="0 0 0">
@@ -91,13 +105,18 @@
 			<!--Auditorium to the right hallway-->
 			<a-cylinder id="cp1-19" checkpoint radius="0.5" height="0.001" position="8 .01 -11" color="#39BB82" visible="false"></a-cylinder>
 			<a-cylinder id="cp1-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#39BB82" visible="false"></a-cylinder>			
-			<a-cylinder id="cp1-22" checkpoint radius="0.5" height="0.001" position="5 .01 -25" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-23" checkpoint radius="0.5" height="0.001" position="10 .01 -25" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-24" checkpoint radius="0.5" height="0.001" position="15 .01 -25" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#39BB82" visible="false"></a-cylinder>		
+			
+			<!-- hallway to the right -->
+			<a-cylinder id="cp1-22" checkpoint radius="0.5" height="0.001" position="5 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-23" checkpoint radius="0.5" height="0.001" position="10 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-24" checkpoint radius="0.5" height="0.001" position="15 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-27" checkpoint radius="0.5" height="0.001" position="20 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+
+
 			<a-cylinder id="cp1-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#39BB82" visible="false"></a-cylinder>
 			<a-cylinder id="cp1-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-27" checkpoint radius="0.5" height="0.001" position="20 .01 -25" color="#39BB82" visible="false"></a-cylinder>
+			
 			
 			<!-- TEXT OF HHS-->
 			<a-entity id="EnGeo" bmfont-text="text: Engineering & Geoscience
@@ -323,6 +342,21 @@
 			var b17Floor1 = document.getElementById("bg17-1");
 			var b18Floor1 = document.getElementById("bg18-1");
 
+			// right hallway
+			var b19Floor1 = document.getElementById("bg19-1"); 
+			var b20Floor1 = document.getElementById("bg20-1");
+			var b21Floor1 = document.getElementById("bg21-1");
+			var b22Floor1 = document.getElementById("bg22-1");
+			
+			// back right hallway
+			var b23Floor1 = document.getElementById("bg23-1");
+			var b24Floor1 = document.getElementById("bg24-1");
+			var b25Floor1 = document.getElementById("bg25-1");
+
+			// aditorium
+			var b26Floor1 = document.getElementById("bg26-1");
+			var b27Floor1 = document.getElementById("bg27-1");
+
 			// ************** FIRST FLOOR ************** 
 			// hides and shows certain checkpoints
 			cp1Floor1.addEventListener('click', function() {
@@ -363,7 +397,7 @@
 				b3Floor1.setAttribute('visible', 'true');
 				b4Floor1.setAttribute('visible', 'false');
 				b7Floor1.setAttribute('visible', 'false');
-
+				b27Floor1.setAttribute('visible', 'false');
 			})
 			cp4Floor1.addEventListener('click', function() {
 				cp2Floor1.setAttribute('visible', 'false');
@@ -526,7 +560,8 @@
 				b18Floor1.setAttribute('visible', 'false');
 				b4Floor1.setAttribute('visible', 'false');
 				b5Floor1.setAttribute('visible', 'true');
-				b6Floor1.setAttribute('visible', 'false');				
+				b6Floor1.setAttribute('visible', 'false');		
+				b19Floor1.setAttribute('visible', 'false');
 			})
 			//green checkpoint
 			cp22Floor1.addEventListener('click', function() {
@@ -535,6 +570,11 @@
 				cp17Floor1.setAttribute('visible', 'false');
 				cp18Floor1.setAttribute('visible', 'true');
 				cp23Floor1.setAttribute('visible', 'true');
+
+				b5Floor1.setAttribute('visible', 'false');
+				b19Floor1.setAttribute('visible', 'true');
+				b20Floor1.setAttribute('visible', 'false');
+
 			})
 			//purple checkpoint
 			cp23Floor1.addEventListener('click', function() {
@@ -542,6 +582,10 @@
 				cp4Floor1.setAttribute('visible', 'false');
 				cp24Floor1.setAttribute('visible', 'true');
 				cp27Floor1.setAttribute('visible', 'false');
+
+				b19Floor1.setAttribute('visible', 'false');
+				b20Floor1.setAttribute('visible', 'true');
+				b21Floor1.setAttribute('visible', 'false');
 			})
 			//orange checkpoint
 			cp24Floor1.addEventListener('click', function() {
@@ -549,6 +593,10 @@
 				cp23Floor1.setAttribute('visible', 'true');
 				cp27Floor1.setAttribute('visible', 'true');
 				cp25Floor1.setAttribute('visible', 'false');
+
+				b20Floor1.setAttribute('visible', 'false');
+				b21Floor1.setAttribute('visible', 'true');
+				b22Floor1.setAttribute('visible', 'false');
 			})
 			// black checkpoint
 			cp27Floor1.addEventListener('click', function() {
@@ -557,6 +605,9 @@
 				cp25Floor1.setAttribute('visible', 'true');
 				cp26Floor1.setAttribute('visible', 'false');
 
+				b21Floor1.setAttribute('visible', 'false');
+				b22Floor1.setAttribute('visible', 'true');
+				b23Floor1.setAttribute('visible', 'false');
 			})
 			//grey checkpoint
 			cp25Floor1.addEventListener('click', function() {
@@ -564,6 +615,10 @@
 				cp26Floor1.setAttribute('visible', 'true');
 				cp27Floor1.setAttribute('visible', 'true');
 				cp21Floor1.setAttribute('visible', 'false');
+
+				b22Floor1.setAttribute('visible', 'false');
+				b23Floor1.setAttribute('visible', 'true');
+				b24Floor1.setAttribute('visible', 'false');
 			})
 			//red checkpoint
 			cp26Floor1.addEventListener('click', function() {
@@ -571,6 +626,10 @@
 				cp25Floor1.setAttribute('visible', 'true');
 				cp21Floor1.setAttribute('visible', 'true');
 				cp20Floor1.setAttribute('visible', 'false');
+
+				b23Floor1.setAttribute('visible', 'false');
+				b24Floor1.setAttribute('visible', 'true');
+				b25Floor1.setAttribute('visible', 'false');
 			})
 			//yellow checkpoint
 			cp21Floor1.addEventListener('click', function() {
@@ -578,6 +637,10 @@
 				cp26Floor1.setAttribute('visible', 'true');
 				cp20Floor1.setAttribute('visible', 'true');
 				cp19Floor1.setAttribute('visible', 'false');
+
+				b24Floor1.setAttribute('visible', 'false');
+				b25Floor1.setAttribute('visible', 'true');
+				b26Floor1.setAttribute('visible', 'false');
 			})
 
 			//green checkpoint
@@ -586,6 +649,10 @@
 				cp21Floor1.setAttribute('visible', 'true');
 				cp19Floor1.setAttribute('visible', 'true');
 				cp3Floor1.setAttribute('visible', 'false');
+
+				b25Floor1.setAttribute('visible', 'false');
+				b26Floor1.setAttribute('visible', 'true');
+				b27Floor1.setAttribute('visible', 'false');
 			})
 			//black checkpoint 
 			cp19Floor1.addEventListener('click', function() {
@@ -595,6 +662,10 @@
 				cp21Floor1.setAttribute('visible', 'false');
 				cp20Floor1.setAttribute('visible', 'true');
 				cp3Floor1.setAttribute('visible', 'true');
+
+				b26Floor1.setAttribute('visible', 'false');
+				b27Floor1.setAttribute('visible', 'true');
+				b3Floor1.setAttribute('visible', 'false');
 			})
 			
 			// ************** SECOND FLOOR ************** 
