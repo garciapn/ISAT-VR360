@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ISAT360 Capstone</title>
+		<meta name="description" content="ISAT 360 VR">
+		<script src="aframe.js"></script>
+		<script src="extras.js"></script>
+		<script src="text.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<a-mixin id="checkpoint"></a-mixin>
+			</a-assets>
+            <!-- sky for the scene -->
+            <a-sky id="bg1-1" src="Images/R0010002.JPG" rotation="-2 85 0" visible="true"></a-sky>
+            <a-sky id="bg2-1" src="Images/R0010003.JPG" rotation="1 90 0" visible="false"></a-sky>
+            
+            <!-- the cursors for the user -->
+            <a-entity position="0 0 0">
+            	<a-camera universal-controls="movementControls: checkpoint" checkpoint-controls="mode: ">
+            	<a-cursor id="eyes" fuse="true" fuseTimeout="0000"></a-cursor>
+            	</a-camera>
+            </a-entity>
+
+            <!-- checkpoints -->
+            <a-cylinder id="cp1-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB82" visible="true"></a-cylinder>
+			<a-cylinder id="cp1-2" checkpoint radius="0.5" height="0.001" position="0 .01 -7" color="#39BB82" visible="true"></a-cylinder>
+
+		</a-scene>
+		<script>
+			// cursor call
+			var cp1Floor1 = document.getElementById("cp1-1");
+			var cp2Floor1 = document.getElementById("cp1-2");
+			var b1Floor1 = document.getElementById("bg1-1");
+			var b2Floor1 = document.getElementById("bg2-1");
+			
+			// hides and shows certain checkpoints
+			cp1Floor1.addEventListener('click', function() {
+				cp2Floor1.setAttribute('visible', 'true');
+				b1Floor1.setAttribute('visible', 'true');
+				b2Floor1.setAttribute('visible', 'false');
+			})
+			cp2Floor1.addEventListener('click', function() {
+				cp1Floor1.setAttribute('visible', 'true');
+				b1Floor1.setAttribute('visible', 'false');
+				b2Floor1.setAttribute('visible', 'true');
+			})
+		</script>
+	</body>
+</html>			
