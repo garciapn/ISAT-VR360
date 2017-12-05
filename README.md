@@ -21,6 +21,8 @@ Code, test, and play around.
 - open Google Chrome and use the given ip address
 - walk around/test
 
+- DOES NOT WORK?
+--https://zyst.io/how-to-fix-aws-s3-chrome-and-safari-cors-on-images
 ## Contributors
 - Development of website, aframe design, iOS application - Paolo Garcia
 - Development of android application - Anthony Teate
