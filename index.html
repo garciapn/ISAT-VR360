@@ -261,10 +261,10 @@
             <a-cylinder id="cp3-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#2B60DE" visible="false"></a-cylinder>
 			
 			<!-- ENGEO checkpoint -->
-			<a-cylinder id="cp3-5" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-5" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#2B60DE" visible="false"></a-cylinder>
 			
 			<!-- left hallway -->
-            <a-cylinder id="cp3-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="black" visible="false"></a-cylinder>
 			<a-cylinder id="cp3-7" checkpoint radius="0.5" height="0.001" position="-10 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
 			<a-cylinder id="cp3-8" checkpoint radius="0.5" height="0.001" position="-15 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
 			<a-cylinder id="cp3-9" checkpoint radius="0.5" height="0.001" position="-20 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
@@ -1243,6 +1243,7 @@
 				cp7Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'true');
 				
+				b2Floor3.setAttribute('visible', 'false');
 				b3Floor3.setAttribute('visible', 'false');
 				b6Floor3.setAttribute('visible', 'true');
 				b7Floor3.setAttribute('visible', 'false');
@@ -1252,60 +1253,99 @@
 				cp3Floor3.setAttribute('visible', 'false');
 				cp8Floor3.setAttribute('visible', 'true');
 				
+				b6Floor3.setAttribute('visible', 'false');
+				b7Floor3.setAttribute('visible', 'true');
+				b8Floor3.setAttribute('visible', 'false');
 			})
 			cp8Floor3.addEventListener('click', function() {
 				cp6Floor3.setAttribute('visible', 'false');
 				cp7Floor3.setAttribute('visible', 'true');
 				cp9Floor3.setAttribute('visible', 'true');
-				cp10Floor3.setAttribute('visible', 'false');		
+				cp10Floor3.setAttribute('visible', 'false');	
+
+				b7Floor3.setAttribute('visible', 'false');
+				b8Floor3.setAttribute('visible', 'true');
+				b9Floor3.setAttribute('visible', 'false');
 			})
 			cp9Floor3.addEventListener('click', function() {
 				cp7Floor3.setAttribute('visible', 'false');
 				cp8Floor3.setAttribute('visible', 'true');
 				cp10Floor3.setAttribute('visible', 'true');
 				cp11Floor3.setAttribute('visible', 'false');
+				
+				b8Floor3.setAttribute('visible', 'false');
+				b9Floor3.setAttribute('visible', 'true');
+				b10Floor3.setAttribute('visible', 'false');
 			})
 			cp10Floor3.addEventListener('click', function() {
 				cp8Floor3.setAttribute('visible', 'false');
 				cp9Floor3.setAttribute('visible', 'true');
 				cp11Floor3.setAttribute('visible', 'true');
 				cp12Floor3.setAttribute('visible', 'false');
+				
+				b9Floor3.setAttribute('visible', 'false');
+				b10Floor3.setAttribute('visible', 'true');
+				b11Floor3.setAttribute('visible', 'false');
 			})
 			cp11Floor3.addEventListener('click', function() {
 				cp9Floor3.setAttribute('visible', 'false');
 				cp10Floor3.setAttribute('visible', 'true');
 				cp12Floor3.setAttribute('visible', 'true');
 				cp13Floor3.setAttribute('visible', 'false');
+				
+				b10Floor3.setAttribute('visible', 'false');
+				b11Floor3.setAttribute('visible', 'true');
+				b12Floor3.setAttribute('visible', 'false');
 			})
 			cp12Floor3.addEventListener('click', function() {
 				cp10Floor3.setAttribute('visible', 'false');
 				cp11Floor3.setAttribute('visible', 'true');
 				cp13Floor3.setAttribute('visible', 'true');
 				cp14Floor3.setAttribute('visible', 'false');
+				
+				b11Floor3.setAttribute('visible', 'false');
+				b12Floor3.setAttribute('visible', 'true');
+				b13Floor3.setAttribute('visible', 'false');
 			})
 			cp13Floor3.addEventListener('click', function() {
 				cp11Floor3.setAttribute('visible', 'false');
 				cp12Floor3.setAttribute('visible', 'true');
 				cp14Floor3.setAttribute('visible', 'true');
 				cp15Floor3.setAttribute('visible', 'false');
+				
+				b12Floor3.setAttribute('visible', 'false');
+				b13Floor3.setAttribute('visible', 'true');
+				b14Floor3.setAttribute('visible', 'false');
 			})
 			cp14Floor3.addEventListener('click', function() {
 				cp12Floor3.setAttribute('visible', 'false');
 				cp13Floor3.setAttribute('visible', 'true');
 				cp15Floor3.setAttribute('visible', 'true');
 				cp16Floor3.setAttribute('visible', 'false');
+				
+				b13Floor3.setAttribute('visible', 'false');
+				b14Floor3.setAttribute('visible', 'true');
+				b15Floor3.setAttribute('visible', 'false');
 			})
 			cp15Floor3.addEventListener('click', function() {
 				cp13Floor3.setAttribute('visible', 'false');
 				cp14Floor3.setAttribute('visible', 'true');
 				cp16Floor3.setAttribute('visible', 'true');
 				cp17Floor3.setAttribute('visible', 'false');
+				
+				b14Floor3.setAttribute('visible', 'false');
+				b15Floor3.setAttribute('visible', 'true');
+				b16Floor3.setAttribute('visible', 'false');
 			})
 			cp16Floor3.addEventListener('click', function() {
 				cp14Floor3.setAttribute('visible', 'false');
 				cp15Floor3.setAttribute('visible', 'true');
 				cp17Floor3.setAttribute('visible', 'true');
 				cp18Floor3.setAttribute('visible', 'false');
+				
+				b15Floor3.setAttribute('visible', 'false');
+				b16Floor3.setAttribute('visible', 'true');
+				b17Floor3.setAttribute('visible', 'false');
 			})
 			cp17Floor3.addEventListener('click', function() {
 				cp4Floor3.setAttribute('visible', 'false');
@@ -1314,6 +1354,10 @@
 				cp16Floor3.setAttribute('visible', 'true');
 				cp22Floor3.setAttribute('visible', 'false');
 				cp18Floor3.setAttribute('visible', 'true');
+				
+				b16Floor3.setAttribute('visible', 'false');
+				b17Floor3.setAttribute('visible', 'true');
+				b18Floor3.setAttribute('visible', 'false');
 			})
 			//Hallway checkpoint
 			cp18Floor3.addEventListener('click', function() {
@@ -1324,6 +1368,12 @@
 				cp17Floor3.setAttribute('visible', 'true');
 				cp22Floor3.setAttribute('visible', 'true');
 				cp23Floor3.setAttribute('visible', 'false');
+				
+				b17Floor3.setAttribute('visible', 'false');
+				b3Floor3.setAttribute('visible', 'false');
+				b4Floor3.setAttribute('visible', 'true');
+				b5Floor3.setAttribute('visible', 'false');		
+				b18Floor3.setAttribute('visible', 'false');
 			})
 			//green checkpoint
 			cp22Floor3.addEventListener('click', function() {
@@ -1332,6 +1382,10 @@
 				cp17Floor3.setAttribute('visible', 'false');
 				cp18Floor3.setAttribute('visible', 'true');
 				cp23Floor3.setAttribute('visible', 'true');
+				
+				b4Floor2.setAttribute('visible', 'false');
+				b18Floor2.setAttribute('visible', 'true');
+				b19Floor2.setAttribute('visible', 'false');
 			})
 			//purple checkpoint
 			cp23Floor3.addEventListener('click', function() {
@@ -1339,6 +1393,10 @@
 				cp4Floor3.setAttribute('visible', 'false');
 				cp24Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'false');
+				
+				b18Floor2.setAttribute('visible', 'false');
+				b19Floor2.setAttribute('visible', 'true');
+				b20Floor2.setAttribute('visible', 'false');
 			})
 			//orange checkpoint
 			cp24Floor3.addEventListener('click', function() {
@@ -1346,6 +1404,10 @@
 				cp23Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'true');
 				cp25Floor3.setAttribute('visible', 'false');
+				
+				b19Floor2.setAttribute('visible', 'false');
+				b20Floor2.setAttribute('visible', 'true');
+				b21Floor2.setAttribute('visible', 'false');
 			})
 			// black checkpoint
 			cp27Floor3.addEventListener('click', function() {
@@ -1353,7 +1415,10 @@
 				cp24Floor3.setAttribute('visible', 'true');
 				cp25Floor3.setAttribute('visible', 'true');
 				cp26Floor3.setAttribute('visible', 'false');
-
+				
+				b20Floor2.setAttribute('visible', 'false');
+				b21Floor2.setAttribute('visible', 'true');
+				b22Floor2.setAttribute('visible', 'false');
 			})
 			//grey checkpoint
 			cp25Floor3.addEventListener('click', function() {
@@ -1361,6 +1426,10 @@
 				cp26Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'true');
 				cp21Floor3.setAttribute('visible', 'false');
+				
+				b22Floor2.setAttribute('visible', 'false');
+				b23Floor2.setAttribute('visible', 'true');
+				b24Floor2.setAttribute('visible', 'false');
 			})
 			//red checkpoint
 			cp26Floor3.addEventListener('click', function() {
@@ -1368,6 +1437,10 @@
 				cp25Floor3.setAttribute('visible', 'true');
 				cp21Floor3.setAttribute('visible', 'true');
 				cp20Floor3.setAttribute('visible', 'false');
+				
+				b23Floor2.setAttribute('visible', 'false');
+				b24Floor2.setAttribute('visible', 'true');
+				b25Floor2.setAttribute('visible', 'false');
 			})
 			//yellow checkpoint
 			cp21Floor3.addEventListener('click', function() {
@@ -1375,6 +1448,10 @@
 				cp26Floor3.setAttribute('visible', 'true');
 				cp20Floor3.setAttribute('visible', 'true');
 				cp19Floor3.setAttribute('visible', 'false');
+				
+				b24Floor2.setAttribute('visible', 'false');
+				b25Floor2.setAttribute('visible', 'true');
+				b26Floor2.setAttribute('visible', 'false');
 			})
 
 			//green checkpoint
@@ -1383,6 +1460,10 @@
 				cp21Floor3.setAttribute('visible', 'true');
 				cp19Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'false');
+				
+				b25Floor2.setAttribute('visible', 'false');
+				b26Floor2.setAttribute('visible', 'true');
+				b27Floor2.setAttribute('visible', 'false');
 			})
 			//black checkpoint 
 			cp19Floor3.addEventListener('click', function() {
@@ -1392,10 +1473,11 @@
 				cp21Floor3.setAttribute('visible', 'false');
 				cp20Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'true');
+				
+				b26Floor2.setAttribute('visible', 'false');
+				b27Floor2.setAttribute('visible', 'true');
+				b2Floor2.setAttribute('visible', 'false');
 			})
-
-
-
 
 			// mouseenter and mouseleave for the color changes
 			for (i = 1; i < 28; i++) {
