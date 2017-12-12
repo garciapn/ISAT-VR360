@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ISAT360 Capstone</title>
-		<meta name="description" content="ISAT 360 VR ~ Pano U">
+		<meta name="description" content="ISAT 360 VR">
 		<!-- Paolo Garcia ISAT Capstone Project -->
 		<!-- files needed: aframe for the aframe components and extras.js for the checkpoints and cursor -->
-		<script src="aframe.js"></script>
-		<script src="extras.js"></script>
-		<script src="text.js"></script>
+		<script src="https://s3.amazonaws.com/isat-vr-360/aframe.js"></script>
+		<script src="https://s3.amazonaws.com/isat-vr-360/extras.js"></script>
+		<script src="https://s3.amazonaws.com/isat-vr-360/text.js"></script>
+
 	</head>
 	<body>
 	<!-- scene for aframe -->
@@ -27,9 +28,9 @@
             <a-sky id="bg1-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010002.JPG" rotation="-2 85 0" visible="true"></a-sky>
             <a-sky id="bg2-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010003.JPG" rotation="1 90 0" visible="false"></a-sky>
             <a-sky id="bg3-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010004.JPG" rotation="1 93 0" visible="false"></a-sky>
-            <a-sky id="bg4-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010005.JPG" rotation="0 83 0" visible="false"></a-sky>
+            <a-sky id="bg4-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010005.JPG" rotation="1 83 0" visible="false"></a-sky>
             <a-sky id="bg5-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010006.JPG" rotation="0 90 0" visible="false"></a-sky>
-            <a-sky id="bg6-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010007.JPG" rotation="0 90 0" visible="false"></a-sky>
+            <a-sky id="bg6-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010007.JPG" rotation="0.5 89 0" visible="false"></a-sky>
 
 			<!-- left hallway -->
 			<a-sky id="bg7-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010008.JPG" rotation="1 179 0" visible="false"></a-sky>
@@ -44,21 +45,21 @@
 
 			<!-- back hallway -->
 			<a-sky id="bg14-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010015.JPG" rotation="1 5 0" visible="false"></a-sky> 
-			<a-sky id="bg15-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010016.JPG" rotation="1 4 0" visible="false"></a-sky>
-			<a-sky id="bg16-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010017.JPG" rotation="0 4 0" visible="false"></a-sky>
-			<a-sky id="bg17-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010018.JPG" rotation="0 2 0" visible="false"></a-sky>
-			<a-sky id="bg18-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010019.JPG" rotation="0 0 0" visible="false"></a-sky>
+			<a-sky id="bg15-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010016.JPG" rotation="0.5 4 0" visible="false"></a-sky>
+			<a-sky id="bg16-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010017.JPG" rotation="0.5 5 0" visible="false"></a-sky>
+			<a-sky id="bg17-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010018.JPG" rotation="1 2 0" visible="false"></a-sky>
+			<a-sky id="bg18-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010019.JPG" rotation="1 0 -0.5" visible="false"></a-sky>
 			
 			<!-- right hallway -->
 			<a-sky id="bg19-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010020.JPG" rotation="1 4 1.5" visible="false"></a-sky>
 			<a-sky id="bg20-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010021.JPG" rotation="1 4 1.5" visible="false"></a-sky>
 			<a-sky id="bg21-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010022.JPG" rotation="1 4 1.5" visible="false"></a-sky> 
 			<!-- corner -->
-			<a-sky id="bg22-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010023.JPG" rotation="1 4 1.5" visible="false"></a-sky>
+			<a-sky id="bg22-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010023.JPG" rotation="1 265 1.5" visible="false"></a-sky>
 
 			<!-- back right hallway -->
-			<a-sky id="bg23-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010024.JPG" rotation="2 90 1.5" visible="false"></a-sky> 
-			<a-sky id="bg24-1" src="Images/R0010025.JPG" rotation="2 90 1.5" visible="false"></a-sky>  
+			<a-sky id="bg23-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010024.JPG" rotation="2 270 1.5" visible="false"></a-sky> 
+			<a-sky id="bg24-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010025.JPG" rotation="2 270 1.5" visible="false"></a-sky>  
 			<a-sky id="bg25-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010026.JPG" rotation="2 170 1.5" visible="false"></a-sky>
 			<a-sky id="bg26-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010027.JPG" rotation="2 177 1.5" visible="false"></a-sky>
 			<a-sky id="bg27-1" src="https://s3.amazonaws.com/isat-vr-360/images/R0010028.JPG" rotation="2 170 1.5" visible="false"></a-sky>
@@ -96,11 +97,11 @@
 			<a-sky id="bg47" src="https://s3.amazonaws.com/isat-vr-360/images/R0010047.JPG" rotation="1 4 1.5" visible="false"></a-sky>
 			<a-sky id="bg48" src="https://s3.amazonaws.com/isat-vr-360/images/R0010048.JPG" rotation="1 4 1.5" visible="false"></a-sky> 
 			<!-- corner -->
-			<a-sky id="bg49" src="https://s3.amazonaws.com/isat-vr-360/images/R0010049.JPG" rotation="1 4 1.5" visible="false"></a-sky>
+			<a-sky id="bg49" src="https://s3.amazonaws.com/isat-vr-360/images/R0010049.JPG" rotation="1 272 1.5" visible="false"></a-sky>
 
 			<!-- back right hallway -->
-			<a-sky id="bg50" src="https://s3.amazonaws.com/isat-vr-360/images/R0010050.JPG" rotation="2 90 1.5" visible="false"></a-sky> 
-			<a-sky id="bg51" src="https://s3.amazonaws.com/isat-vr-360/images/R0010051.JPG" rotation="2 90 1.5" visible="false"></a-sky>  
+			<a-sky id="bg50" src="https://s3.amazonaws.com/isat-vr-360/images/R0010050.JPG" rotation="2 270 1.5" visible="false"></a-sky> 
+			<a-sky id="bg51" src="https://s3.amazonaws.com/isat-vr-360/images/R0010051.JPG" rotation="2 270 1.5" visible="false"></a-sky>  
 			<a-sky id="bg54" src="https://s3.amazonaws.com/isat-vr-360/images/R0010054.JPG" rotation="2 170 1.5" visible="false"></a-sky>
 
 
@@ -108,7 +109,54 @@
 			<a-sky id="bg52" src="https://s3.amazonaws.com/isat-vr-360/images/R0010052.JPG" rotation="2 170 1.5" visible="false"></a-sky> 
 			<a-sky id="bg53" src="https://s3.amazonaws.com/isat-vr-360/images/R0010053.JPG" rotation="2 170 1.5" visible="false"></a-sky>
 
+			<!-- THIRD FLOOR -->
+			<!-- Straight hallway -->
+            <a-sky id="bg55" src="https://s3.amazonaws.com/isat-vr-360/images/R0010055.JPG" rotation="1 90 0" visible="false"></a-sky>
+            <a-sky id="bg56" src="https://s3.amazonaws.com/isat-vr-360/images/R0010056.JPG" rotation="1 100 0" visible="false"></a-sky>
+            <a-sky id="bg57" src="https://s3.amazonaws.com/isat-vr-360/images/R0010057.JPG" rotation="1 93 0" visible="false"></a-sky>
+            <a-sky id="bg58" src="https://s3.amazonaws.com/isat-vr-360/images/R0010058.JPG" rotation="0 83 0" visible="false"></a-sky>
+            
+			<!-- left hallway -->
+			<a-sky id="bg59" src="https://s3.amazonaws.com/isat-vr-360/images/R0010059.JPG" rotation="1 179 0" visible="false"></a-sky>
+			<a-sky id="bg60" src="https://s3.amazonaws.com/isat-vr-360/images/R0010060.JPG" rotation="0 179 0" visible="false"></a-sky>
+			<a-sky id="bg61" src="https://s3.amazonaws.com/isat-vr-360/images/R0010061.JPG" rotation="0 180 0" visible="false"></a-sky>
+			<a-sky id="bg62" src="https://s3.amazonaws.com/isat-vr-360/images/R0010062.JPG" rotation="0 182 0" visible="false"></a-sky>
+			<a-sky id="bg63" src="https://s3.amazonaws.com/isat-vr-360/images/R0010063.JPG" rotation="0 185 0" visible="false"></a-sky> 
 			
+			<!-- teate/fasha/paul/benton hallway -->
+			<a-sky id="bg64" src="https://s3.amazonaws.com/isat-vr-360/images/R0010064.JPG" rotation="1 91.8 0" visible="false"></a-sky>
+			<a-sky id="bg65" src="https://s3.amazonaws.com/isat-vr-360/images/R0010065.JPG" rotation="1 92 0" visible="false"></a-sky> 
+
+			<!-- back hallway -->
+			<a-sky id="bg66" src="https://s3.amazonaws.com/isat-vr-360/images/R0010066.JPG" rotation="1 5 0" visible="false"></a-sky> 
+			<a-sky id="bg67" src="https://s3.amazonaws.com/isat-vr-360/images/R0010067.JPG" rotation="1 4 0" visible="false"></a-sky>
+			<a-sky id="bg68" src="https://s3.amazonaws.com/isat-vr-360/images/R0010068.JPG" rotation="0 4 0" visible="false"></a-sky>
+			<a-sky id="bg69" src="https://s3.amazonaws.com/isat-vr-360/images/R0010069.JPG" rotation="0 2 0" visible="false"></a-sky>
+			<a-sky id="bg70" src="https://s3.amazonaws.com/isat-vr-360/images/R0010070.JPG" rotation="0 0 0" visible="false"></a-sky>
+			
+			<!-- right hallway -->
+			<a-sky id="bg71" src="https://s3.amazonaws.com/isat-vr-360/images/R0010071.JPG" rotation="1 4 1.5" visible="false"></a-sky>
+			<a-sky id="bg72" src="https://s3.amazonaws.com/isat-vr-360/images/R0010072.JPG" rotation="1 4 1.5" visible="false"></a-sky>
+			<a-sky id="bg73" src="https://s3.amazonaws.com/isat-vr-360/images/R0010073.JPG" rotation="1 4 1.5" visible="false"></a-sky> 
+			<!-- corner -->
+			<a-sky id="bg74" src="https://s3.amazonaws.com/isat-vr-360/images/R0010074.JPG" rotation="1 272 1.5" visible="false"></a-sky>
+
+			<!-- back right hallway -->
+			<a-sky id="bg75" src="https://s3.amazonaws.com/isat-vr-360/images/R0010075.JPG" rotation="2 270 1.5" visible="false"></a-sky> 
+			<a-sky id="bg76" src="https://s3.amazonaws.com/isat-vr-360/images/R0010076.JPG" rotation="2 270 1.5" visible="false"></a-sky>  
+			<a-sky id="bg77" src="https://s3.amazonaws.com/isat-vr-360/images/R0010077.JPG" rotation="2 170 1.5" visible="false"></a-sky>
+
+
+			<!-- aditorium -->
+			<a-sky id="bg78" src="https://s3.amazonaws.com/isat-vr-360/images/R0010078.JPG" rotation="2 170 1.5" visible="false"></a-sky> 
+			<a-sky id="bg79" src="https://s3.amazonaws.com/isat-vr-360/images/R0010079.JPG" rotation="2 170 1.5" visible="false"></a-sky>
+
+			<!-- PROFESSORS OFFICE -->
+			<a-sky id="bgTeate" src="https://s3.amazonaws.com/isat-vr-360/images/R0010090.JPG" rotation="0 270 0" visible="false"></a-sky>
+
+			<!-- CLASSROOMS -->
+
+
             <!-- the cursors for the user -->
             <a-entity position="0 0 0">
             	<a-camera universal-controls="movementControls: checkpoint" checkpoint-controls="mode: ">
@@ -119,151 +167,153 @@
             <!-- the checkpoints with their unique id -->
             <!-- First Floor -->
             <!-- straight line hallway -->
-            <a-cylinder id="cp1-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB82" visible="true"></a-cylinder>
-			<a-cylinder id="cp1-2" checkpoint radius="0.5" height="0.001" position="0 .01 -7" color="#39BB82" visible="true"></a-cylinder>
-            <a-cylinder id="cp1-3" checkpoint radius="0.5" height="0.001" position="0 .01 -11" color="#39BB82" visible="false"></a-cylinder>
-            <a-cylinder id="cp1-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-5" checkpoint radius="0.5" height="0.001" position="0 .01 -34" color="#39BB82" visible="false"></a-cylinder>
+            <a-cylinder id="cp1-1" checkpoint radius="0.8" height="0.001" position="0 .01 0" color="#AD9C65" visible="true"></a-cylinder>
+			<a-cylinder id="cp1-2" checkpoint radius="0.8" height="0.001" position="0 .01 -7" color="#AD9C65" visible="true"></a-cylinder>
+            <a-cylinder id="cp1-3" checkpoint radius="0.8" height="0.001" position="0 .01 -11" color="#AD9C65" visible="false"></a-cylinder>
+            <a-cylinder id="cp1-4" checkpoint radius="0.8" height="0.001" position="0 .01 -21.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-5" checkpoint radius="0.8" height="0.001" position="0 .01 -40" color="#AD9C65" visible="false"></a-cylinder>
 
 			<!-- left hallway -->
-            <a-cylinder id="cp1-6" checkpoint radius="0.5" height="0.001" position="-7 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-7" checkpoint radius="0.5" height="0.001" position="-16.5 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-8" checkpoint radius="0.5" height="0.001" position="-25 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-9" checkpoint radius="0.5" height="0.001" position="-33 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-10" checkpoint radius="0.5" height="0.001" position="-42 .01 -9" color="#39BB82" visible="false"></a-cylinder>
+            <a-cylinder id="cp1-6" checkpoint radius="0.8" height="0.001" position="-12 .01 -8.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-7" checkpoint radius="0.8" height="0.001" position="-21 .01 -8.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-8" checkpoint radius="0.8" height="0.001" position="-29 .01 -8.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-9" checkpoint radius="0.8" height="0.001" position="-38 .01 -8.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-10" checkpoint radius="0.8" height="0.001" position="-46.5 .01 -8.5" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- Teate and Bentons office hallway-->
-			<a-cylinder id="cp1-11" checkpoint radius="0.5" height="0.001" position="-42 .01 -15" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-12" checkpoint radius="0.5" height="0.001" position="-42 .01 -24" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-11" checkpoint radius="0.8" height="0.001" position="-46.5 .01 -15" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-12" checkpoint radius="0.8" height="0.001" position="-46.5 .01 -24" color="#AD9C65" visible="false"></a-cylinder>
+
+			<a-box id="teateOffice" color="#AD9C65" checkpoint depth="1.5" height ="2" width=".01" position="-48.5 1 -28.5" opacity="1" visible="false"></a-box>
 
 			<!-- corner -->
-			<a-cylinder id="cp1-13" checkpoint radius="0.5" height="0.001" position="-42 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-13" checkpoint radius="0.8" height="0.001" position="-46.5 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- hallway of stairs and elevator--> 
-			<a-cylinder id="cp1-14" checkpoint radius="0.5" height="0.001" position="-34 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-15" checkpoint radius="0.5" height="0.001" position="-25 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-16" checkpoint radius="0.5" height="0.001" position="-15 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-17" checkpoint radius="0.5" height="0.001" position="-11 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-18" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-14" checkpoint radius="0.8" height="0.001" position="-36 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-15" checkpoint radius="0.8" height="0.001" position="-25 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-16" checkpoint radius="0.8" height="0.001" position="-15 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-17" checkpoint radius="0.8" height="0.001" position="-9 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-18" checkpoint radius="0.8" height="0.001" position="0 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
 
 			<!--Auditorium to the right hallway-->
-			<a-cylinder id="cp1-19" checkpoint radius="0.5" height="0.001" position="8 .01 -11" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#39BB82" visible="false"></a-cylinder>		
+			<a-cylinder id="cp1-19" checkpoint radius="0.8" height="0.001" position="8 .01 -11" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-20" checkpoint radius="0.8" height="0.001" position="16 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-21" checkpoint radius="0.8" height="0.001" position="20 .01 -10" color="#AD9C65" visible="false"></a-cylinder>		
 			
 			<!-- hallway to the right -->
-			<a-cylinder id="cp1-22" checkpoint radius="0.5" height="0.001" position="5 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-23" checkpoint radius="0.5" height="0.001" position="10 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-24" checkpoint radius="0.5" height="0.001" position="15 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-27" checkpoint radius="0.5" height="0.001" position="20 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-22" checkpoint radius="0.8" height="0.001" position="10 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-23" checkpoint radius="0.8" height="0.001" position="18 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-24" checkpoint radius="0.8" height="0.001" position="25 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-27" checkpoint radius="0.8" height="0.001" position="34 .01 -31.5" color="#AD9C65" visible="false"></a-cylinder>
 
 
-			<a-cylinder id="cp1-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp1-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-25" checkpoint radius="0.8" height="0.001" position="20 .01 -20" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp1-26" checkpoint radius="0.8" height="0.001" position="20 .01 -15" color="#AD9C65" visible="false"></a-cylinder>
 			
 			
 			<!-- TEXT OF HHS-->
 			<a-entity id="EnGeo" bmfont-text="text: Engineering & Geoscience
-			--Under Construction--" position="-1 1.5 -36.5" color="black" visible="true"></a-entity>
-			<a-box id="EnGeoBox" color="purple" depth="4" height ="5" width=".05" position="0 1 -36" rotation="0 90 0" opacity=".2"></a-box>
+			--Under Construction--" position="-1 1.5 -44.5" color="black" visible="false"></a-entity>
+			<a-box id="EnGeoBox" color="purple" depth="4" height ="5" width=".05" position="0 1 -44" rotation="0 90 0" opacity=".2" visible="false"></a-box>
             
             <!-- Second Floor -->
             <!-- straight line hallway -->
-            <a-cylinder id="cp2-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-2" checkpoint radius="0.5" height="0.001" position="0 .01 -7" color="#39BB82" visible="false"></a-cylinder>
-            <a-cylinder id="cp2-3" checkpoint radius="0.5" height="0.001" position="0 .01 -11" color="#39BB82" visible="false"></a-cylinder>
-            <a-cylinder id="cp2-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-5" checkpoint radius="0.5" height="0.001" position="0 .01 -34" color="#39BB82" visible="false"></a-cylinder>
+            <a-cylinder id="cp2-1" checkpoint radius="0.8" height="0.001" position="0 .01 0" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-2" checkpoint radius="0.8" height="0.001" position="0 .01 -7" color="#AD9C65" visible="false"></a-cylinder>
+            <a-cylinder id="cp2-3" checkpoint radius="0.8" height="0.001" position="0 .01 -11" color="#AD9C65" visible="false"></a-cylinder>
+            <a-cylinder id="cp2-4" checkpoint radius="0.8" height="0.001" position="0 .01 -17.5" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-5" checkpoint radius="0.8" height="0.001" position="0 .01 -34" color="black" visible="false"></a-cylinder>
 
 			<!-- left hallway -->
-            <a-cylinder id="cp2-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-7" checkpoint radius="0.5" height="0.001" position="-16.5 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-8" checkpoint radius="0.5" height="0.001" position="-25 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-9" checkpoint radius="0.5" height="0.001" position="-33 .01 -9" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-10" checkpoint radius="0.5" height="0.001" position="-42 .01 -9" color="#39BB82" visible="false"></a-cylinder>
+            <a-cylinder id="cp2-6" checkpoint radius="0.8" height="0.001" position="-5 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-7" checkpoint radius="0.8" height="0.001" position="-16.5 .01 -9" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-8" checkpoint radius="0.8" height="0.001" position="-25 .01 -9" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-9" checkpoint radius="0.8" height="0.001" position="-33 .01 -9" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-10" checkpoint radius="0.8" height="0.001" position="-42 .01 -9" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- Teate and Bentons office hallway-->
-			<a-cylinder id="cp2-11" checkpoint radius="0.5" height="0.001" position="-42 .01 -15" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-12" checkpoint radius="0.5" height="0.001" position="-42 .01 -24" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-11" checkpoint radius="0.8" height="0.001" position="-42 .01 -15" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-12" checkpoint radius="0.8" height="0.001" position="-42 .01 -24" color="#AD9C65" visible="false"></a-cylinder>
 
 			<!-- corner -->
-			<a-cylinder id="cp2-13" checkpoint radius="0.5" height="0.001" position="-42 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-13" checkpoint radius="0.8" height="0.001" position="-42 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- hallway of stairs and elevator--> 
-			<a-cylinder id="cp2-14" checkpoint radius="0.5" height="0.001" position="-34 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-15" checkpoint radius="0.5" height="0.001" position="-25 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-16" checkpoint radius="0.5" height="0.001" position="-15 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-17" checkpoint radius="0.5" height="0.001" position="-11 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-18" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-14" checkpoint radius="0.8" height="0.001" position="-34 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-15" checkpoint radius="0.8" height="0.001" position="-25 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-16" checkpoint radius="0.8" height="0.001" position="-15 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-17" checkpoint radius="0.8" height="0.001" position="-11 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-18" checkpoint radius="0.8" height="0.001" position="0 .01 -30" color="black" visible="false"></a-cylinder>
 
 			<!--Auditorium to the right hallway-->
-			<a-cylinder id="cp2-19" checkpoint radius="0.5" height="0.001" position="8 .01 -11" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#39BB82" visible="false"></a-cylinder>		
+			<a-cylinder id="cp2-19" checkpoint radius="0.8" height="0.001" position="8 .01 -11" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-20" checkpoint radius="0.8" height="0.001" position="16 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-21" checkpoint radius="0.8" height="0.001" position="20 .01 -10" color="#AD9C65" visible="false"></a-cylinder>		
 			
 			<!-- hallway to the right -->
-			<a-cylinder id="cp2-22" checkpoint radius="0.5" height="0.001" position="5 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-23" checkpoint radius="0.5" height="0.001" position="10 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-24" checkpoint radius="0.5" height="0.001" position="15 .01 -30" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-27" checkpoint radius="0.5" height="0.001" position="20 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-22" checkpoint radius="0.8" height="0.001" position="5 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-23" checkpoint radius="0.8" height="0.001" position="10 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-24" checkpoint radius="0.8" height="0.001" position="15 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-27" checkpoint radius="0.8" height="0.001" position="20 .01 -30" color="yellow" visible="false"></a-cylinder>
 
 
-			<a-cylinder id="cp2-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#39BB82" visible="false"></a-cylinder>
-			<a-cylinder id="cp2-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-25" checkpoint radius="0.8" height="0.001" position="20 .01 -20" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp2-26" checkpoint radius="0.8" height="0.001" position="20 .01 -15" color="#AD9C65" visible="false"></a-cylinder>
 
 			
 			<!-- third Floor -->
             <!-- straight line hallway -->
-            <a-cylinder id="cp3-1" checkpoint radius="0.5" height="0.001" position="0 .01 0" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-2" checkpoint radius="0.5" height="0.001" position="0 .01 -5" color="#2B60DE" visible="false"></a-cylinder>
-            <a-cylinder id="cp3-3" checkpoint radius="0.5" height="0.001" position="0 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-            <a-cylinder id="cp3-4" checkpoint radius="0.5" height="0.001" position="0 .01 -17.5" color="#2B60DE" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-1" checkpoint radius="0.8" height="0.001" position="0 .01 0" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-2" checkpoint radius="0.8" height="0.001" position="0 .01 -7" color="#AD9C65" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-3" checkpoint radius="0.8" height="0.001" position="0 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-4" checkpoint radius="0.8" height="0.001" position="0 .01 -17.5" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- ENGEO checkpoint -->
-			<a-cylinder id="cp3-5" checkpoint radius="0.5" height="0.001" position="0 .01 -30" color="#39BB82" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-5" checkpoint radius="0.8" height="0.001" position="0 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- left hallway -->
-            <a-cylinder id="cp3-6" checkpoint radius="0.5" height="0.001" position="-5 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-7" checkpoint radius="0.5" height="0.001" position="-10 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-8" checkpoint radius="0.5" height="0.001" position="-15 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-9" checkpoint radius="0.5" height="0.001" position="-20 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-10" checkpoint radius="0.5" height="0.001" position="-25 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
+            <a-cylinder id="cp3-6" checkpoint radius="0.8" height="0.001" position="-5 .01 -10" color="black" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-7" checkpoint radius="0.8" height="0.001" position="-10 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-8" checkpoint radius="0.8" height="0.001" position="-15 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-9" checkpoint radius="0.8" height="0.001" position="-20 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-10" checkpoint radius="0.8" height="0.001" position="-25 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- Teate and Bentons office hallway-->
-			<a-cylinder id="cp3-11" checkpoint radius="0.5" height="0.001" position="-25 .01 -15" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-12" checkpoint radius="0.5" height="0.001" position="-25 .01 -20" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-13" checkpoint radius="0.5" height="0.001" position="-25 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-11" checkpoint radius="0.8" height="0.001" position="-25 .01 -15" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-12" checkpoint radius="0.8" height="0.001" position="-25 .01 -20" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-13" checkpoint radius="0.8" height="0.001" position="-25 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
 			
 			<!-- hallway of stairs and elevator--> 
-			<a-cylinder id="cp3-14" checkpoint radius="0.5" height="0.001" position="-20 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-15" checkpoint radius="0.5" height="0.001" position="-15 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-16" checkpoint radius="0.5" height="0.001" position="-10 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-17" checkpoint radius="0.5" height="0.001" position="-5 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-18" checkpoint radius="0.5" height="0.001" position="0 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-14" checkpoint radius="0.8" height="0.001" position="-20 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-15" checkpoint radius="0.8" height="0.001" position="-15 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-16" checkpoint radius="0.8" height="0.001" position="-10 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-17" checkpoint radius="0.8" height="0.001" position="-5 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-18" checkpoint radius="0.8" height="0.001" position="0 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
 
 			<!--Auditorium to the right hallway-->
-			<a-cylinder id="cp3-19" checkpoint radius="0.5" height="0.001" position="8 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-20" checkpoint radius="0.5" height="0.001" position="16 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-21" checkpoint radius="0.5" height="0.001" position="20 .01 -10" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-22" checkpoint radius="0.5" height="0.001" position="5 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-23" checkpoint radius="0.5" height="0.001" position="10 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-24" checkpoint radius="0.5" height="0.001" position="15 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-25" checkpoint radius="0.5" height="0.001" position="20 .01 -20" color="#2B60DE" visible="false"></a-cylinder>
-			<a-cylinder id="cp3-26" checkpoint radius="0.5" height="0.001" position="20 .01 -15" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-19" checkpoint radius="0.8" height="0.001" position="8 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-20" checkpoint radius="0.8" height="0.001" position="16 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-21" checkpoint radius="0.8" height="0.001" position="20 .01 -10" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-22" checkpoint radius="0.8" height="0.001" position="5 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-23" checkpoint radius="0.8" height="0.001" position="10 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-24" checkpoint radius="0.8" height="0.001" position="15 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-25" checkpoint radius="0.8" height="0.001" position="20 .01 -20" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-26" checkpoint radius="0.8" height="0.001" position="20 .01 -15" color="#AD9C65" visible="false"></a-cylinder>
 			
-			<a-cylinder id="cp3-27" checkpoint radius="0.5" height="0.001" position="20 .01 -25" color="#2B60DE" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-27" checkpoint radius="0.8" height="0.001" position="20 .01 -25" color="#AD9C65" visible="false"></a-cylinder>
 			
             <!-- ISAT VR LOGO -->
 			
 			<!-- Stairs -->
-			<a-box id="stairs-1" color="#39BB82" depth="2" height ="2" width=".1" position="-3 1 -7.5" opacity="1" visible="false"></a-box>
+			<a-box id="stairs-1" color="#AD9C65" depth="2" height ="2" width=".1" position="-3 2 -7" opacity=".3" visible="false"></a-box>
 
-			<a-box id="stairs-2" color="#39BB11" depth="2" height ="2" width=".1" position="-3 1 -7" opacity="1" visible="false"></a-box>
+			<a-box id="stairs-2" color="#AD9C65" depth="2" height ="2" width=".1" position="-3 2 -7.3" opacity=".3" visible="false"></a-box>
 
 			<!-- Elevator to go down -->
-			<a-box id="elevator-2" color="#39BB11" depth="2" height ="2" width=".1" position="3 1 -6" opacity="1" visible="false"></a-box>
+			<a-box id="elevator-2" color="#AD9C65" depth="1.5" height ="2" width=".1" position="3 2 -6.5" opacity=".3" visible="false"></a-box>
 
-			<a-box id="elevator-3" color="#2B60DE" depth="2" height ="2" width=".1" position="3 1 -5" opacity="1" visible="false"></a-box>
+			<a-box id="elevator-3" color="#AD9C65" depth="1.5" height ="2" width=".1" position="3 2 -7" opacity=".3" visible="false"></a-box>
 
             <!-- text has to be put behind the invisible box for the correct order -->
             <!-- back checkpoint 
@@ -414,6 +464,7 @@
 			var b2Floor2 = document.getElementById("bg30");
 			var b3Floor2 = document.getElementById("bg44");
 			var b4Floor2 = document.getElementById("bg43");
+			
 			var b5Floor2 = document.getElementById("bg45");
 			
 
@@ -450,7 +501,50 @@
 			var b25Floor2 = document.getElementById("bg52");
 			var b26Floor2 = document.getElementById("bg53");
 
+			////////////////////////////////THIRD FLOOR
+			// main hallway
+			var b1Floor3 = document.getElementById("bg55");
+			var b2Floor3 = document.getElementById("bg56");
+			var b3Floor3 = document.getElementById("bg57");
+			var b4Floor3 = document.getElementById("bg58");
+			
+			// left hallway 
+			var b6Floor3 = document.getElementById("bg59");
+			var b7Floor3 = document.getElementById("bg60");
+			var b8Floor3 = document.getElementById("bg61");
+			var b9Floor3 = document.getElementById("bg62");
+			var b10Floor3 = document.getElementById("bg63");
 
+			// paul/fasha/morgan/teate hallway
+			var b11Floor3 = document.getElementById("bg64");
+			var b12Floor3 = document.getElementById("bg65");
+
+			// back hallway
+			var b13Floor3 = document.getElementById("bg66");
+			var b14Floor3 = document.getElementById("bg67");
+			var b15Floor3 = document.getElementById("bg68");
+			var b16Floor3 = document.getElementById("bg69");
+			var b17Floor3 = document.getElementById("bg70");
+
+			// right hallway
+			var b18Floor3 = document.getElementById("bg71"); 
+			var b19Floor3 = document.getElementById("bg72");
+			var b20Floor3 = document.getElementById("bg73");
+			var b21Floor3 = document.getElementById("bg74");
+			
+			// back right hallway
+			var b22Floor3 = document.getElementById("bg75");
+			var b23Floor3 = document.getElementById("bg76");
+			var b24Floor3 = document.getElementById("bg77");
+
+			// aditorium
+			var b25Floor3 = document.getElementById("bg78");
+			var b26Floor3 = document.getElementById("bg79");
+
+
+			// Teate office
+			var teate = document.getElementById("teateOffice");
+			var bTeate = document.getElementById("bgTeate");
 
 			// ************** FIRST FLOOR ************** 
 			// hides and shows certain checkpoints
@@ -507,7 +601,7 @@
 				b3Floor1.setAttribute('visible', 'false');
 				b4Floor1.setAttribute('visible', 'true');
 				b5Floor1.setAttribute('visible', 'false');
-
+			
 			})
 			cp5Floor1.addEventListener('click', function() {
 				cp4Floor1.setAttribute('visible', 'false');
@@ -517,6 +611,8 @@
 				b4Floor1.setAttribute('visible', 'false');
 				b5Floor1.setAttribute('visible', 'false');
 				b6Floor1.setAttribute('visible', 'true');
+				enGeo.setAttribute('visible', 'true');
+				enGeoBox.setAttribute('visible', 'true');
 			})
 			cp6Floor1.addEventListener('click', function() {
 				cp2Floor1.setAttribute('visible', 'false');
@@ -579,6 +675,7 @@
 				b11Floor1.setAttribute('visible', 'false');
 				b12Floor1.setAttribute('visible', 'true');
 				b13Floor1.setAttribute('visible', 'false');
+				teate.setAttribute('visible', 'false');
 			})
 			cp12Floor1.addEventListener('click', function() {
 				cp10Floor1.setAttribute('visible', 'false');
@@ -589,6 +686,22 @@
 				b12Floor1.setAttribute('visible', 'false');
 				b13Floor1.setAttribute('visible', 'true');
 				b14Floor1.setAttribute('visible', 'false');
+				bTeate.setAttribute('visible', 'false');
+
+				teate.setAttribute('visible', 'true');
+			})
+
+			teate.addEventListener('click', function() {
+				cp11Floor1.setAttribute('visible', 'false');
+				cp12Floor1.setAttribute('visible', 'false');
+
+
+				bTeate.setAttribute('visible', 'true');
+				teate.setAttribute('visible', 'false');
+				b12Floor1.setAttribute('visible', 'false');
+				b13Floor1.setAttribute('visible', 'false');
+				b14Floor1.setAttribute('visible', 'false');
+
 			})
 			cp13Floor1.addEventListener('click', function() {
 				cp11Floor1.setAttribute('visible', 'false');
@@ -599,6 +712,9 @@
 				b13Floor1.setAttribute('visible', 'false');
 				b14Floor1.setAttribute('visible', 'true');
 				b15Floor1.setAttribute('visible', 'false');
+				bTeate.setAttribute('visible', 'false');
+
+				teate.setAttribute('visible', 'false');
 			})
 			cp14Floor1.addEventListener('click', function() {
 				cp12Floor1.setAttribute('visible', 'false');
@@ -657,6 +773,9 @@
 				b5Floor1.setAttribute('visible', 'true');
 				b6Floor1.setAttribute('visible', 'false');		
 				b19Floor1.setAttribute('visible', 'false');
+				
+				enGeo.setAttribute('visible', 'false');
+				enGeoBox.setAttribute('visible', 'false');
 			})
 			//green checkpoint
 			cp22Floor1.addEventListener('click', function() {
@@ -677,7 +796,8 @@
 				cp4Floor1.setAttribute('visible', 'false');
 				cp24Floor1.setAttribute('visible', 'true');
 				cp27Floor1.setAttribute('visible', 'false');
-
+				cp22Floor1.setAttribute('visible', 'true');
+				
 				b19Floor1.setAttribute('visible', 'false');
 				b20Floor1.setAttribute('visible', 'true');
 				b21Floor1.setAttribute('visible', 'false');
@@ -780,8 +900,9 @@
 				cp19Floor2.setAttribute('visible', 'false');
 				
 				// STAIRS
+				stairs1.setAttribute('visible', 'false');
 				stairs2.setAttribute('visible', 'true');
-				elevator3.setAttribute('visible', 'true');
+				elevator2.setAttribute('visible', 'true');
 
 				b1Floor2.setAttribute('visible', 'true');
 				b2Floor2.setAttribute('visible', 'false');
@@ -789,7 +910,7 @@
 			cp3Floor2.addEventListener('click', function() {
 				cp1Floor2.setAttribute('visible', 'false');
 				stairs2.setAttribute('visible', 'false');
-				elevator3.setAttribute('visible', 'false');
+				elevator2.setAttribute('visible', 'false');
 				cp7Floor2.setAttribute('visible', 'false');
 
 				cp2Floor2.setAttribute('visible', 'true');
@@ -800,11 +921,11 @@
 				cp19Floor2.setAttribute('visible', 'true');
 				cp20Floor2.setAttribute('visible', 'false');
 
-				b2Floor2.setAttribute('visible', 'false');
-				b3Floor2.setAttribute('visible', 'true');
-				b4Floor2.setAttribute('visible', 'false');
-				b7Floor2.setAttribute('visible', 'false');
-				b27Floor2.setAttribute('visible', 'false');
+				b1Floor2.setAttribute('visible', 'false');
+				b2Floor2.setAttribute('visible', 'true');
+				b3Floor2.setAttribute('visible', 'false');
+				b6Floor2.setAttribute('visible', 'false');
+				b26Floor2.setAttribute('visible', 'false');
 			})
 			cp4Floor2.addEventListener('click', function() {
 				cp2Floor2.setAttribute('visible', 'false');
@@ -816,9 +937,9 @@
 				cp19Floor2.setAttribute('visible', 'false');
 				cp22Floor2.setAttribute('visible', 'false');
 
-				b3Floor2.setAttribute('visible', 'false');
-				b4Floor2.setAttribute('visible', 'true');
-				b5Floor2.setAttribute('visible', 'false');
+				b2Floor2.setAttribute('visible', 'false');
+				b3Floor2.setAttribute('visible', 'true');
+				b4Floor2.setAttribute('visible', 'false');
 
 			})
 			cp5Floor2.addEventListener('click', function() {
@@ -826,9 +947,11 @@
 				cp17Floor2.setAttribute('visible', 'false');
 				cp22Floor2.setAttribute('visible', 'false');
 
+				b3Floor2.setAttribute('visible', 'false');
+				b5Floor2.setAttribute('visible', 'true');
 				b4Floor2.setAttribute('visible', 'false');
-				b5Floor2.setAttribute('visible', 'false');
-				b6Floor2.setAttribute('visible', 'true');
+				enGeo.setAttribute('visible', 'true');
+				enGeoBox.setAttribute('visible', 'true');
 			})
 			cp6Floor2.addEventListener('click', function() {
 				cp2Floor2.setAttribute('visible', 'false');
@@ -838,9 +961,9 @@
 				cp7Floor2.setAttribute('visible', 'true');
 				cp3Floor2.setAttribute('visible', 'true');
 				
-				b3Floor2.setAttribute('visible', 'false');
-				b7Floor2.setAttribute('visible', 'true');
-				b8Floor2.setAttribute('visible', 'false');
+				b2Floor2.setAttribute('visible', 'false');
+				b6Floor2.setAttribute('visible', 'true');
+				b7Floor2.setAttribute('visible', 'false');
 			})
 			cp7Floor2.addEventListener('click', function() {
 				cp9Floor2.setAttribute('visible', 'false');
@@ -848,9 +971,9 @@
 				cp8Floor2.setAttribute('visible', 'true');
 				cp6Floor2.setAttribute('visible', 'true');
 
-				b7Floor2.setAttribute('visible', 'false');
-				b8Floor2.setAttribute('visible', 'true');
-				b9Floor2.setAttribute('visible', 'false');
+				b6Floor2.setAttribute('visible', 'false');
+				b7Floor2.setAttribute('visible', 'true');
+				b8Floor2.setAttribute('visible', 'false');
 			})
 			cp8Floor2.addEventListener('click', function() {
 				cp6Floor2.setAttribute('visible', 'false');
@@ -858,9 +981,9 @@
 				cp9Floor2.setAttribute('visible', 'true');
 				cp10Floor2.setAttribute('visible', 'false');
 
-				b8Floor2.setAttribute('visible', 'false');
-				b9Floor2.setAttribute('visible', 'true');
-				b10Floor2.setAttribute('visible', 'false');
+				b7Floor2.setAttribute('visible', 'false');
+				b8Floor2.setAttribute('visible', 'true');
+				b9Floor2.setAttribute('visible', 'false');
 			})
 			cp9Floor2.addEventListener('click', function() {
 				cp7Floor2.setAttribute('visible', 'false');
@@ -868,9 +991,9 @@
 				cp10Floor2.setAttribute('visible', 'true');
 				cp11Floor2.setAttribute('visible', 'false');
 
-				b9Floor2.setAttribute('visible', 'false');
-				b10Floor2.setAttribute('visible', 'true');
-				b11Floor2.setAttribute('visible', 'false');
+				b8Floor2.setAttribute('visible', 'false');
+				b9Floor2.setAttribute('visible', 'true');
+				b10Floor2.setAttribute('visible', 'false');
 			})
 			cp10Floor2.addEventListener('click', function() {
 				cp8Floor2.setAttribute('visible', 'false');
@@ -878,9 +1001,9 @@
 				cp11Floor2.setAttribute('visible', 'true');
 				cp12Floor2.setAttribute('visible', 'false');
 
-				b10Floor2.setAttribute('visible', 'false');
-				b11Floor2.setAttribute('visible', 'true');
-				b12Floor2.setAttribute('visible', 'false');
+				b9Floor2.setAttribute('visible', 'false');
+				b10Floor2.setAttribute('visible', 'true');
+				b11Floor2.setAttribute('visible', 'false');
 			})
 			cp11Floor2.addEventListener('click', function() {
 				cp9Floor2.setAttribute('visible', 'false');
@@ -888,9 +1011,9 @@
 				cp12Floor2.setAttribute('visible', 'true');
 				cp13Floor2.setAttribute('visible', 'false');
 
-				b11Floor2.setAttribute('visible', 'false');
-				b12Floor2.setAttribute('visible', 'true');
-				b13Floor2.setAttribute('visible', 'false');
+				b10Floor2.setAttribute('visible', 'false');
+				b11Floor2.setAttribute('visible', 'true');
+				b12Floor2.setAttribute('visible', 'false');
 			})
 			cp12Floor2.addEventListener('click', function() {
 				cp10Floor2.setAttribute('visible', 'false');
@@ -898,9 +1021,9 @@
 				cp13Floor2.setAttribute('visible', 'true');
 				cp14Floor2.setAttribute('visible', 'false');
 
-				b12Floor2.setAttribute('visible', 'false');
-				b13Floor2.setAttribute('visible', 'true');
-				b14Floor2.setAttribute('visible', 'false');
+				b11Floor2.setAttribute('visible', 'false');
+				b12Floor2.setAttribute('visible', 'true');
+				b13Floor2.setAttribute('visible', 'false');
 			})
 			cp13Floor2.addEventListener('click', function() {
 				cp11Floor2.setAttribute('visible', 'false');
@@ -908,9 +1031,9 @@
 				cp14Floor2.setAttribute('visible', 'true');
 				cp15Floor2.setAttribute('visible', 'false');
 
-				b13Floor2.setAttribute('visible', 'false');
-				b14Floor2.setAttribute('visible', 'true');
-				b15Floor2.setAttribute('visible', 'false');
+				b12Floor2.setAttribute('visible', 'false');
+				b13Floor2.setAttribute('visible', 'true');
+				b14Floor2.setAttribute('visible', 'false');
 			})
 			cp14Floor2.addEventListener('click', function() {
 				cp12Floor2.setAttribute('visible', 'false');
@@ -918,9 +1041,9 @@
 				cp15Floor2.setAttribute('visible', 'true');
 				cp16Floor2.setAttribute('visible', 'false');
 
-				b14Floor2.setAttribute('visible', 'false');
-				b15Floor2.setAttribute('visible', 'true');
-				b16Floor2.setAttribute('visible', 'false');
+				b13Floor2.setAttribute('visible', 'false');
+				b14Floor2.setAttribute('visible', 'true');
+				b15Floor2.setAttribute('visible', 'false');
 			})
 			cp15Floor2.addEventListener('click', function() {
 				cp13Floor2.setAttribute('visible', 'false');
@@ -928,9 +1051,9 @@
 				cp16Floor2.setAttribute('visible', 'true');
 				cp17Floor2.setAttribute('visible', 'false');
 
-				b15Floor2.setAttribute('visible', 'false');
-				b16Floor2.setAttribute('visible', 'true');
-				b17Floor2.setAttribute('visible', 'false');
+				b14Floor2.setAttribute('visible', 'false');
+				b15Floor2.setAttribute('visible', 'true');
+				b16Floor2.setAttribute('visible', 'false');
 			})
 			cp16Floor2.addEventListener('click', function() {
 				cp14Floor2.setAttribute('visible', 'false');
@@ -938,9 +1061,9 @@
 				cp17Floor2.setAttribute('visible', 'true');
 				cp18Floor2.setAttribute('visible', 'false');
 
-				b16Floor2.setAttribute('visible', 'false');
-				b17Floor2.setAttribute('visible', 'true');
-				b18Floor2.setAttribute('visible', 'false');
+				b15Floor2.setAttribute('visible', 'false');
+				b16Floor2.setAttribute('visible', 'true');
+				b17Floor2.setAttribute('visible', 'false');
 			})
 			cp17Floor2.addEventListener('click', function() {
 				cp4Floor2.setAttribute('visible', 'false');
@@ -950,9 +1073,9 @@
 				cp22Floor2.setAttribute('visible', 'false');
 				cp18Floor2.setAttribute('visible', 'true');
 
-				b17Floor2.setAttribute('visible', 'false');
-				b18Floor2.setAttribute('visible', 'true');
-				b5Floor2.setAttribute('visible', 'false');
+				b16Floor2.setAttribute('visible', 'false');
+				b17Floor2.setAttribute('visible', 'true');
+				b4Floor2.setAttribute('visible', 'false');
 			})
 			//Hallway checkpoint
 			cp18Floor2.addEventListener('click', function() {
@@ -964,11 +1087,13 @@
 				cp22Floor2.setAttribute('visible', 'true');
 				cp23Floor2.setAttribute('visible', 'false');
 
+				b17Floor2.setAttribute('visible', 'false');
+				b3Floor2.setAttribute('visible', 'false');
+				b4Floor2.setAttribute('visible', 'true');
+				b5Floor2.setAttribute('visible', 'false');		
 				b18Floor2.setAttribute('visible', 'false');
-				b4Floor2.setAttribute('visible', 'false');
-				b5Floor2.setAttribute('visible', 'true');
-				b6Floor2.setAttribute('visible', 'false');		
-				b19Floor2.setAttribute('visible', 'false');
+				enGeo.setAttribute('visible', 'false');
+				enGeoBox.setAttribute('visible', 'false');
 			})
 			//green checkpoint
 			cp22Floor2.addEventListener('click', function() {
@@ -978,9 +1103,9 @@
 				cp18Floor2.setAttribute('visible', 'true');
 				cp23Floor2.setAttribute('visible', 'true');
 
-				b5Floor2.setAttribute('visible', 'false');
-				b19Floor2.setAttribute('visible', 'true');
-				b20Floor2.setAttribute('visible', 'false');
+				b4Floor2.setAttribute('visible', 'false');
+				b18Floor2.setAttribute('visible', 'true');
+				b19Floor2.setAttribute('visible', 'false');
 
 			})
 			//purple checkpoint
@@ -989,10 +1114,11 @@
 				cp4Floor2.setAttribute('visible', 'false');
 				cp24Floor2.setAttribute('visible', 'true');
 				cp27Floor2.setAttribute('visible', 'false');
-
-				b19Floor2.setAttribute('visible', 'false');
-				b20Floor2.setAttribute('visible', 'true');
-				b21Floor2.setAttribute('visible', 'false');
+				cp22Floor2.setAttribute('visible', 'true');
+				
+				b18Floor2.setAttribute('visible', 'false');
+				b19Floor2.setAttribute('visible', 'true');
+				b20Floor2.setAttribute('visible', 'false');
 			})
 			//orange checkpoint
 			cp24Floor2.addEventListener('click', function() {
@@ -1001,9 +1127,9 @@
 				cp27Floor2.setAttribute('visible', 'true');
 				cp25Floor2.setAttribute('visible', 'false');
 
-				b20Floor2.setAttribute('visible', 'false');
-				b21Floor2.setAttribute('visible', 'true');
-				b22Floor2.setAttribute('visible', 'false');
+				b19Floor2.setAttribute('visible', 'false');
+				b20Floor2.setAttribute('visible', 'true');
+				b21Floor2.setAttribute('visible', 'false');
 			})
 			// black checkpoint
 			cp27Floor2.addEventListener('click', function() {
@@ -1012,9 +1138,9 @@
 				cp25Floor2.setAttribute('visible', 'true');
 				cp26Floor2.setAttribute('visible', 'false');
 
-				b21Floor2.setAttribute('visible', 'false');
-				b22Floor2.setAttribute('visible', 'true');
-				b23Floor2.setAttribute('visible', 'false');
+				b20Floor2.setAttribute('visible', 'false');
+				b21Floor2.setAttribute('visible', 'true');
+				b22Floor2.setAttribute('visible', 'false');
 			})
 			//grey checkpoint
 			cp25Floor2.addEventListener('click', function() {
@@ -1023,9 +1149,9 @@
 				cp27Floor2.setAttribute('visible', 'true');
 				cp21Floor2.setAttribute('visible', 'false');
 
-				b22Floor2.setAttribute('visible', 'false');
-				b23Floor2.setAttribute('visible', 'true');
-				b24Floor2.setAttribute('visible', 'false');
+				b21Floor2.setAttribute('visible', 'false');
+				b22Floor2.setAttribute('visible', 'true');
+				b23Floor2.setAttribute('visible', 'false');
 			})
 			//red checkpoint
 			cp26Floor2.addEventListener('click', function() {
@@ -1034,9 +1160,9 @@
 				cp21Floor2.setAttribute('visible', 'true');
 				cp20Floor2.setAttribute('visible', 'false');
 
-				b23Floor2.setAttribute('visible', 'false');
-				b24Floor2.setAttribute('visible', 'true');
-				b25Floor2.setAttribute('visible', 'false');
+				b22Floor2.setAttribute('visible', 'false');
+				b23Floor2.setAttribute('visible', 'true');
+				b24Floor2.setAttribute('visible', 'false');
 			})
 			//yellow checkpoint
 			cp21Floor2.addEventListener('click', function() {
@@ -1045,9 +1171,9 @@
 				cp20Floor2.setAttribute('visible', 'true');
 				cp19Floor2.setAttribute('visible', 'false');
 
-				b24Floor2.setAttribute('visible', 'false');
-				b25Floor2.setAttribute('visible', 'true');
-				b26Floor2.setAttribute('visible', 'false');
+				b23Floor2.setAttribute('visible', 'false');
+				b24Floor2.setAttribute('visible', 'true');
+				b25Floor2.setAttribute('visible', 'false');
 			})
 
 			//green checkpoint
@@ -1057,9 +1183,9 @@
 				cp19Floor2.setAttribute('visible', 'true');
 				cp3Floor2.setAttribute('visible', 'false');
 
-				b25Floor2.setAttribute('visible', 'false');
-				b26Floor2.setAttribute('visible', 'true');
-				b27Floor2.setAttribute('visible', 'false');
+				b24Floor2.setAttribute('visible', 'false');
+				b25Floor2.setAttribute('visible', 'true');
+				b26Floor2.setAttribute('visible', 'false');
 			})
 			//black checkpoint 
 			cp19Floor2.addEventListener('click', function() {
@@ -1070,9 +1196,9 @@
 				cp20Floor2.setAttribute('visible', 'true');
 				cp3Floor2.setAttribute('visible', 'true');
 
-				b26Floor2.setAttribute('visible', 'false');
-				b27Floor2.setAttribute('visible', 'true');
-				b3Floor2.setAttribute('visible', 'false');
+				b25Floor2.setAttribute('visible', 'false');
+				b26Floor2.setAttribute('visible', 'true');
+				b2Floor2.setAttribute('visible', 'false');
 			})
 			
 
@@ -1084,7 +1210,7 @@
 				elevator3.setAttribute('visible', 'false');
 			})
 			cp2Floor3.addEventListener('click', function() {
-				cp1Floor3.setAttribute('visible', 'true');
+				cp1Floor3.setAttribute('visible', 'false');
 				cp3Floor3.setAttribute('visible', 'true');
 				cp4Floor3.setAttribute('visible', 'false');
 				cp5Floor3.setAttribute('visible', 'false');
@@ -1092,6 +1218,9 @@
 				cp19Floor3.setAttribute('visible', 'false');
 				
 				elevator3.setAttribute('visible', 'true');
+				
+				b1Floor3.setAttribute('visible', 'true');
+				b2Floor3.setAttribute('visible', 'false');
 			})
 			cp3Floor3.addEventListener('click', function() {
 				cp1Floor3.setAttribute('visible', 'false');
@@ -1106,6 +1235,12 @@
 				cp19Floor3.setAttribute('visible', 'true');
 				cp20Floor3.setAttribute('visible', 'false');
 				elevator3.setAttribute('visible', 'false');
+				
+				b1Floor3.setAttribute('visible', 'false');
+				b2Floor3.setAttribute('visible', 'true');
+				b3Floor3.setAttribute('visible', 'false');
+				b26Floor3.setAttribute('visible', 'false');
+				b6Floor3.setAttribute('visible', 'false');
 			})
 			cp4Floor3.addEventListener('click', function() {
 				cp2Floor3.setAttribute('visible', 'false');
@@ -1116,11 +1251,24 @@
 				cp18Floor3.setAttribute('visible', 'true');
 				cp19Floor3.setAttribute('visible', 'false');
 				cp22Floor3.setAttribute('visible', 'false');
+				
+				
+				b2Floor3.setAttribute('visible', 'false');
+				b3Floor3.setAttribute('visible', 'true');
+				b4Floor3.setAttribute('visible', 'false');
+				b18Floor3.setAttribute('visible', 'false');
+				
 			})
 			cp5Floor3.addEventListener('click', function() {
 				cp4Floor3.setAttribute('visible', 'false');
 				cp17Floor3.setAttribute('visible', 'false');
 				cp22Floor3.setAttribute('visible', 'false');
+
+				
+				b3Floor3.setAttribute('visible', 'false');
+				b4Floor3.setAttribute('visible', 'true');
+				b17Floor3.setAttribute('visible', 'false');
+				b18Floor3.setAttribute('visible', 'false');
 			})
 			cp6Floor3.addEventListener('click', function() {
 				cp2Floor3.setAttribute('visible', 'false');
@@ -1129,66 +1277,110 @@
 				cp8Floor3.setAttribute('visible', 'false');
 				cp7Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'true');
+				
+				b2Floor3.setAttribute('visible', 'false');
+				b3Floor3.setAttribute('visible', 'false');
+				b6Floor3.setAttribute('visible', 'true');
+				b7Floor3.setAttribute('visible', 'false');
 			})
 			cp7Floor3.addEventListener('click', function() {
 				cp9Floor3.setAttribute('visible', 'false');
 				cp3Floor3.setAttribute('visible', 'false');
 				cp8Floor3.setAttribute('visible', 'true');
 				
+				b6Floor3.setAttribute('visible', 'false');
+				b7Floor3.setAttribute('visible', 'true');
+				b8Floor3.setAttribute('visible', 'false');
 			})
 			cp8Floor3.addEventListener('click', function() {
 				cp6Floor3.setAttribute('visible', 'false');
 				cp7Floor3.setAttribute('visible', 'true');
 				cp9Floor3.setAttribute('visible', 'true');
-				cp10Floor3.setAttribute('visible', 'false');		
+				cp10Floor3.setAttribute('visible', 'false');	
+
+				b7Floor3.setAttribute('visible', 'false');
+				b8Floor3.setAttribute('visible', 'true');
+				b9Floor3.setAttribute('visible', 'false');
 			})
 			cp9Floor3.addEventListener('click', function() {
 				cp7Floor3.setAttribute('visible', 'false');
 				cp8Floor3.setAttribute('visible', 'true');
 				cp10Floor3.setAttribute('visible', 'true');
 				cp11Floor3.setAttribute('visible', 'false');
+				
+				b8Floor3.setAttribute('visible', 'false');
+				b9Floor3.setAttribute('visible', 'true');
+				b10Floor3.setAttribute('visible', 'false');
 			})
 			cp10Floor3.addEventListener('click', function() {
 				cp8Floor3.setAttribute('visible', 'false');
 				cp9Floor3.setAttribute('visible', 'true');
 				cp11Floor3.setAttribute('visible', 'true');
 				cp12Floor3.setAttribute('visible', 'false');
+				
+				b9Floor3.setAttribute('visible', 'false');
+				b10Floor3.setAttribute('visible', 'true');
+				b11Floor3.setAttribute('visible', 'false');
 			})
 			cp11Floor3.addEventListener('click', function() {
 				cp9Floor3.setAttribute('visible', 'false');
 				cp10Floor3.setAttribute('visible', 'true');
 				cp12Floor3.setAttribute('visible', 'true');
 				cp13Floor3.setAttribute('visible', 'false');
+				
+				b10Floor3.setAttribute('visible', 'false');
+				b11Floor3.setAttribute('visible', 'true');
+				b12Floor3.setAttribute('visible', 'false');
 			})
 			cp12Floor3.addEventListener('click', function() {
 				cp10Floor3.setAttribute('visible', 'false');
 				cp11Floor3.setAttribute('visible', 'true');
 				cp13Floor3.setAttribute('visible', 'true');
 				cp14Floor3.setAttribute('visible', 'false');
+				
+				b11Floor3.setAttribute('visible', 'false');
+				b12Floor3.setAttribute('visible', 'true');
+				b13Floor3.setAttribute('visible', 'false');
 			})
 			cp13Floor3.addEventListener('click', function() {
 				cp11Floor3.setAttribute('visible', 'false');
 				cp12Floor3.setAttribute('visible', 'true');
 				cp14Floor3.setAttribute('visible', 'true');
 				cp15Floor3.setAttribute('visible', 'false');
+				
+				b12Floor3.setAttribute('visible', 'false');
+				b13Floor3.setAttribute('visible', 'true');
+				b14Floor3.setAttribute('visible', 'false');
 			})
 			cp14Floor3.addEventListener('click', function() {
 				cp12Floor3.setAttribute('visible', 'false');
 				cp13Floor3.setAttribute('visible', 'true');
 				cp15Floor3.setAttribute('visible', 'true');
 				cp16Floor3.setAttribute('visible', 'false');
+				
+				b13Floor3.setAttribute('visible', 'false');
+				b14Floor3.setAttribute('visible', 'true');
+				b15Floor3.setAttribute('visible', 'false');
 			})
 			cp15Floor3.addEventListener('click', function() {
 				cp13Floor3.setAttribute('visible', 'false');
 				cp14Floor3.setAttribute('visible', 'true');
 				cp16Floor3.setAttribute('visible', 'true');
 				cp17Floor3.setAttribute('visible', 'false');
+				
+				b14Floor3.setAttribute('visible', 'false');
+				b15Floor3.setAttribute('visible', 'true');
+				b16Floor3.setAttribute('visible', 'false');
 			})
 			cp16Floor3.addEventListener('click', function() {
 				cp14Floor3.setAttribute('visible', 'false');
 				cp15Floor3.setAttribute('visible', 'true');
 				cp17Floor3.setAttribute('visible', 'true');
 				cp18Floor3.setAttribute('visible', 'false');
+				
+				b15Floor3.setAttribute('visible', 'false');
+				b16Floor3.setAttribute('visible', 'true');
+				b17Floor3.setAttribute('visible', 'false');
 			})
 			cp17Floor3.addEventListener('click', function() {
 				cp4Floor3.setAttribute('visible', 'false');
@@ -1197,6 +1389,10 @@
 				cp16Floor3.setAttribute('visible', 'true');
 				cp22Floor3.setAttribute('visible', 'false');
 				cp18Floor3.setAttribute('visible', 'true');
+				
+				b16Floor3.setAttribute('visible', 'false');
+				b17Floor3.setAttribute('visible', 'true');
+				b4Floor3.setAttribute('visible', 'false');
 			})
 			//Hallway checkpoint
 			cp18Floor3.addEventListener('click', function() {
@@ -1207,6 +1403,12 @@
 				cp17Floor3.setAttribute('visible', 'true');
 				cp22Floor3.setAttribute('visible', 'true');
 				cp23Floor3.setAttribute('visible', 'false');
+				
+				b17Floor3.setAttribute('visible', 'false');
+				b3Floor3.setAttribute('visible', 'false');
+				b4Floor3.setAttribute('visible', 'true');
+				b5Floor3.setAttribute('visible', 'false');		
+				b18Floor3.setAttribute('visible', 'false');
 			})
 			//green checkpoint
 			cp22Floor3.addEventListener('click', function() {
@@ -1215,6 +1417,10 @@
 				cp17Floor3.setAttribute('visible', 'false');
 				cp18Floor3.setAttribute('visible', 'true');
 				cp23Floor3.setAttribute('visible', 'true');
+				
+				b4Floor3.setAttribute('visible', 'false');
+				b18Floor3.setAttribute('visible', 'true');
+				b19Floor3.setAttribute('visible', 'false');
 			})
 			//purple checkpoint
 			cp23Floor3.addEventListener('click', function() {
@@ -1222,6 +1428,11 @@
 				cp4Floor3.setAttribute('visible', 'false');
 				cp24Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'false');
+				cp22Floor3.setAttribute('visible', 'true');
+				
+				b18Floor3.setAttribute('visible', 'false');
+				b19Floor3.setAttribute('visible', 'true');
+				b20Floor3.setAttribute('visible', 'false');
 			})
 			//orange checkpoint
 			cp24Floor3.addEventListener('click', function() {
@@ -1229,6 +1440,10 @@
 				cp23Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'true');
 				cp25Floor3.setAttribute('visible', 'false');
+				
+				b19Floor3.setAttribute('visible', 'false');
+				b20Floor3.setAttribute('visible', 'true');
+				b21Floor3.setAttribute('visible', 'false');
 			})
 			// black checkpoint
 			cp27Floor3.addEventListener('click', function() {
@@ -1236,7 +1451,10 @@
 				cp24Floor3.setAttribute('visible', 'true');
 				cp25Floor3.setAttribute('visible', 'true');
 				cp26Floor3.setAttribute('visible', 'false');
-
+				
+				b20Floor3.setAttribute('visible', 'false');
+				b21Floor3.setAttribute('visible', 'true');
+				b22Floor3.setAttribute('visible', 'false');
 			})
 			//grey checkpoint
 			cp25Floor3.addEventListener('click', function() {
@@ -1244,6 +1462,10 @@
 				cp26Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'true');
 				cp21Floor3.setAttribute('visible', 'false');
+				
+				b21Floor3.setAttribute('visible', 'false');
+				b22Floor3.setAttribute('visible', 'true');
+				b23Floor3.setAttribute('visible', 'false');
 			})
 			//red checkpoint
 			cp26Floor3.addEventListener('click', function() {
@@ -1251,6 +1473,10 @@
 				cp25Floor3.setAttribute('visible', 'true');
 				cp21Floor3.setAttribute('visible', 'true');
 				cp20Floor3.setAttribute('visible', 'false');
+				
+				b22Floor3.setAttribute('visible', 'false');
+				b23Floor3.setAttribute('visible', 'true');
+				b24Floor3.setAttribute('visible', 'false');
 			})
 			//yellow checkpoint
 			cp21Floor3.addEventListener('click', function() {
@@ -1258,6 +1484,10 @@
 				cp26Floor3.setAttribute('visible', 'true');
 				cp20Floor3.setAttribute('visible', 'true');
 				cp19Floor3.setAttribute('visible', 'false');
+				
+				b23Floor3.setAttribute('visible', 'false');
+				b24Floor3.setAttribute('visible', 'true');
+				b25Floor3.setAttribute('visible', 'false');
 			})
 
 			//green checkpoint
@@ -1266,6 +1496,10 @@
 				cp21Floor3.setAttribute('visible', 'true');
 				cp19Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'false');
+				
+				b24Floor3.setAttribute('visible', 'false');
+				b25Floor3.setAttribute('visible', 'true');
+				b26Floor3.setAttribute('visible', 'false');
 			})
 			//black checkpoint 
 			cp19Floor3.addEventListener('click', function() {
@@ -1275,10 +1509,12 @@
 				cp21Floor3.setAttribute('visible', 'false');
 				cp20Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'true');
+				
+				b25Floor3.setAttribute('visible', 'false');
+				b26Floor3.setAttribute('visible', 'true');
+				b2Floor3.setAttribute('visible', 'false');
+
 			})
-
-
-
 
 			// mouseenter and mouseleave for the color changes
 			for (i = 1; i < 28; i++) {
@@ -1331,7 +1567,7 @@
 				elevator2.setAttribute('visible', 'true');
 				elevator3.setAttribute('visible', 'false');
 
-				cp1Floor2.setAttribute('visible', 'false');
+				cp2Floor2.setAttribute('visible', 'true');
 				cp3Floor2.setAttribute('visible', 'true');
 
 				b2Floor1.setAttribute('visible', 'false');
@@ -1367,12 +1603,14 @@
 				elevator3.setAttribute('visible', 'true');
 				enGeo.setAttribute('visible', 'false');
 				enGeoBox.setAttribute('visible', 'false');
-
-				cp1Floor3.setAttribute('visible', 'true');
+				
+				cp1Floor3.setAttribute('visible', 'false');
+				cp2Floor3.setAttribute('visible', 'true');
 				cp3Floor3.setAttribute('visible', 'true');
 				
 				elevator3.setAttribute('visible', 'true');
-
+				b1Floor2.setAttribute('visible', 'false');
+				b1Floor3.setAttribute('visible', 'true');
 			})
 
 			for (p = 1; p < 28; p++) {
@@ -1422,15 +1660,16 @@
 				stairs2.setAttribute('visible', 'true');
 				elevator2.setAttribute('visible', 'true');
 				elevator3.setAttribute('visible', 'false');
-				enGeo.setAttribute('visible', 'true');
-
-				enGeoBox.setAttribute('visible', 'true');
-				cp1Floor1.setAttribute('visible', 'true');
-				cp3Floor1.setAttribute('visible', 'true');
 				
-				stairs1.setAttribute('visible', 'true');
+				cp2Floor2.setAttribute('visible', 'true');
+				cp3Floor2.setAttribute('visible', 'true');
+				
+				b1Floor3.setAttribute('visible', 'false');
+				b1Floor2.setAttribute('visible', 'true');
+
 			})
 
 		</script>
 	</body>
 </html>			
+
