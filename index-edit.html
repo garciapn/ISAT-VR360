@@ -156,8 +156,17 @@
 			<a-sky id="bgTeate" src="https://s3.amazonaws.com/isat-vr-360/images/R0010090.JPG" rotation="0 270 0" visible="false"></a-sky>
 
 			<!-- CLASSROOMS -->
+			<a-sky id="bg80" src="https://s3.amazonaws.com/isat-vr-360/images/R0010080.JPG" rotation="3 40 1" visible="false"></a-sky>
+			<a-sky id="bg81" src="https://s3.amazonaws.com/isat-vr-360/images/R0010082.JPG" rotation="3 45 1" visible="false"></a-sky>
+			<a-sky id="bg83" src="https://s3.amazonaws.com/isat-vr-360/images/R0010083.JPG" rotation="1 60 1" visible="false"></a-sky>
+			
+			<!-- 3rd floor professor -->
+			<a-sky id="bg85" src="https://s3.amazonaws.com/isat-vr-360/images/R0010085.JPG" rotation="1 285 1" visible="false"></a-sky>
+
 			<a-sky id="bg86" src="https://s3.amazonaws.com/isat-vr-360/images/R0010086.JPG" rotation="1 9 2" visible="false"></a-sky>
 			<a-sky id="bg87" src="https://s3.amazonaws.com/isat-vr-360/images/R0010087.JPG" rotation="1 160 2" visible="false"></a-sky>
+			<a-sky id="bg88" src="https://s3.amazonaws.com/isat-vr-360/images/R0010088.JPG" rotation="1 52 2" visible="false"></a-sky>
+			<a-sky id="bg89" src="https://s3.amazonaws.com/isat-vr-360/images/R0010089.JPG" rotation="1 52 2" visible="false"></a-sky>
 
             <!-- the cursors for the user -->
             <a-entity position="0 0 0">
@@ -189,7 +198,7 @@
 			<a-box id="teateOffice" color="#AD9C65" checkpoint depth="1.5" height ="2" width=".01" position="-48.5 1 -28.5" opacity="1" visible="false"></a-box>
 			<a-box id="teateLook" color="#450084" depth="1" height ="0.6" width=".01" position="-50.7 1.75 -27" opacity="0.2" visible="false" rotation="0 45 0"></a-box>
 			
-			<a-entity id="teateInfo" bmfont-text="text: Dr. Anthony Teate 
+			<a-entity id="teateInfo" bmfont-text="text: Anthony Teate Ph.D.
 			Professor: IA & ISAT 
 			Faculty Advisor 
 			IEE Computer Society
@@ -320,7 +329,21 @@
 			
 			<a-cylinder id="cp3-28" checkpoint radius="0.8" height="0.001" position="-32.5 .01 -28" color="#AD9C65" visible="false"></a-cylinder>
 			<a-cylinder id="cp3-29" checkpoint radius="0.8" height="0.001" position="-23 .01 -27" color="#AD9C65" visible="false"></a-cylinder>
-            <!-- ISAT VR LOGO -->
+            
+			<a-cylinder id="cp3-30" checkpoint radius="0.8" height="0.001" position="12 .01 -35" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-31" checkpoint radius="0.8" height="0.001" position="18 .01 -29.6" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-32" checkpoint radius="0.8" height="0.001" position="21 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			
+			<!-- teate lab -->
+			<a-cylinder id="cp3-33" checkpoint radius="0.8" height="0.001" position="-10 .01 -29" color="#AD9C65" visible="false"></a-cylinder>
+			<a-cylinder id="cp3-34" checkpoint radius="0.8" height="0.001" position="-5 .01 -26" color="#AD9C65" visible="false"></a-cylinder>
+			
+			<a-cylinder id="cp3-35" checkpoint radius="0.8" height="0.001" position="-48 .01 -30" color="#AD9C65" visible="false"></a-cylinder>
+			<a-box id="macDonaldLook" color="#450084" depth="1" height ="0.6" width=".01" position="-50.7 1.75 -30" opacity="0.2" visible="false" rotation="0 -35 0"></a-box>
+			
+			<a-entity id="macDonaldInfo" bmfont-text="text: Rod MacDonald Ph.D.
+			Assistant Professor ISAT 
+			macdonrh@jmu.edu" position="-51.5 1.6 -27.3" color="white" visible="false" rotation="0 120 0"></a-entity>
 			
 			<!-- Stairs -->
 			<a-box id="stairs-1" color="#AD9C65" depth="2" height ="2" width=".1" position="-3 1.5 -7" opacity=".3" visible="false"></a-box>
@@ -431,6 +454,13 @@
 			var cp27Floor3 = document.getElementById("cp3-27");
 			var cp28Floor3 = document.getElementById("cp3-28");
 			var cp29Floor3 = document.getElementById("cp3-29");
+			var cp30Floor3 = document.getElementById("cp3-30");
+			var cp31Floor3 = document.getElementById("cp3-31");
+			var cp32Floor3 = document.getElementById("cp3-32");
+			var cp33Floor3 = document.getElementById("cp3-33");
+			var cp34Floor3 = document.getElementById("cp3-34");
+			var cp35Floor3 = document.getElementById("cp3-35");
+			
 
 			// main hallway
 			var b1Floor1 = document.getElementById("bg1-1");
@@ -563,10 +593,19 @@
 			var lookAtTeate = document.getElementById("teateLook");
 			var infoTeate = document.getElementById("teateInfo");
 			
+			// MacDonald office
+			var lookAtMac = document.getElementById("macDonaldLook");
+			var infoMac = document.getElementById("macDonaldInfo");
+			
 			// 3rd floor labs/rooms
+			var b80Floor3 = document.getElementById("bg80");
+			var b81Floor3 = document.getElementById("bg81");
+			var b83Floor3 = document.getElementById("bg83");
+			var b85Floor3 = document.getElementById("bg85");
 			var b86Floor3 = document.getElementById("bg86");
 			var b87Floor3 = document.getElementById("bg87");
-
+			var b88Floor3 = document.getElementById("bg88");
+			var b89Floor3 = document.getElementById("bg89");
 			// ************** FIRST FLOOR ************** 
 			// hides and shows certain checkpoints
 			cp1Floor1.addEventListener('click', function() {
@@ -779,6 +818,7 @@
 				b17Floor1.setAttribute('visible', 'true');
 				b18Floor1.setAttribute('visible', 'false');
 			})
+			
 			cp17Floor1.addEventListener('click', function() {
 				cp4Floor1.setAttribute('visible', 'false');
 				cp5Floor1.setAttribute('visible', 'false');
@@ -1054,11 +1094,12 @@
 				cp11Floor2.setAttribute('visible', 'true');
 				cp13Floor2.setAttribute('visible', 'true');
 				cp14Floor2.setAttribute('visible', 'false');
-
+				
 				b11Floor2.setAttribute('visible', 'false');
 				b12Floor2.setAttribute('visible', 'true');
 				b13Floor2.setAttribute('visible', 'false');
 			})
+			
 			cp13Floor2.addEventListener('click', function() {
 				cp11Floor2.setAttribute('visible', 'false');
 				cp12Floor2.setAttribute('visible', 'true');
@@ -1361,6 +1402,7 @@
 				cp10Floor3.setAttribute('visible', 'true');
 				cp12Floor3.setAttribute('visible', 'true');
 				cp13Floor3.setAttribute('visible', 'false');
+				cp35Floor3.setAttribute('visible', 'false');
 				
 				b10Floor3.setAttribute('visible', 'false');
 				b11Floor3.setAttribute('visible', 'true');
@@ -1371,10 +1413,25 @@
 				cp11Floor3.setAttribute('visible', 'true');
 				cp13Floor3.setAttribute('visible', 'true');
 				cp14Floor3.setAttribute('visible', 'false');
+				cp35Floor3.setAttribute('visible', 'true');
 				
 				b11Floor3.setAttribute('visible', 'false');
 				b12Floor3.setAttribute('visible', 'true');
 				b13Floor3.setAttribute('visible', 'false');
+			})
+			
+			cp35Floor3.addEventListener('click', function() {
+				cp11Floor3.setAttribute('visible', 'false');
+				cp12Floor3.setAttribute('visible', 'false');
+				cp13Floor3.setAttribute('visible', 'true');
+				lookAtMac.setAttribute('visible', 'true');
+				
+				b12Floor3.setAttribute('visible', 'false');
+				b85Floor3.setAttribute('visible', 'true');
+				b13Floor3.setAttribute('visible', 'false');
+			})
+			lookAtMac.addEventListener('click', function() {
+				infoMac.setAttribute('visible', 'true');
 			})
 			cp13Floor3.addEventListener('click', function() {
 				cp11Floor3.setAttribute('visible', 'false');
@@ -1382,10 +1439,15 @@
 				cp14Floor3.setAttribute('visible', 'true');
 				cp15Floor3.setAttribute('visible', 'false');
 				cp28Floor3.setAttribute('visible', 'false');
+				cp35Floor3.setAttribute('visible', 'false');
 				
 				b12Floor3.setAttribute('visible', 'false');
 				b13Floor3.setAttribute('visible', 'true');
 				b14Floor3.setAttribute('visible', 'false');
+				b85Floor3.setAttribute('visible', 'false');
+				
+				lookAtMac.setAttribute('visible', 'false');
+				infoMac.setAttribute('visible', 'false');
 			})
 			cp14Floor3.addEventListener('click', function() {
 				cp12Floor3.setAttribute('visible', 'false');
@@ -1416,6 +1478,7 @@
 				cp17Floor3.setAttribute('visible', 'false');
 				cp28Floor3.setAttribute('visible', 'false');
 				cp29Floor3.setAttribute('visible', 'true');
+				cp33Floor3.setAttribute('visible', 'false');
 				
 				b14Floor3.setAttribute('visible', 'false');
 				b15Floor3.setAttribute('visible', 'true');
@@ -1437,11 +1500,34 @@
 				cp17Floor3.setAttribute('visible', 'true');
 				cp18Floor3.setAttribute('visible', 'false');
 				cp29Floor3.setAttribute('visible', 'false');
+				cp34Floor3.setAttribute('visible', 'false');
+				cp33Floor3.setAttribute('visible', 'true');
 				
 				b15Floor3.setAttribute('visible', 'false');
 				b16Floor3.setAttribute('visible', 'true');
 				b17Floor3.setAttribute('visible', 'false');
+				b88Floor3.setAttribute('visible', 'false');
 			})
+			
+			cp33Floor3.addEventListener('click', function() {
+				cp15Floor3.setAttribute('visible', 'false');
+				cp17Floor3.setAttribute('visible', 'false');
+				cp16Floor3.setAttribute('visible', 'true');
+				cp34Floor3.setAttribute('visible', 'true');
+				
+				b16Floor3.setAttribute('visible', 'false');
+				b88Floor3.setAttribute('visible', 'true');
+				b89Floor3.setAttribute('visible', 'false');
+			})
+			
+			cp34Floor3.addEventListener('click', function() {
+				b88Floor3.setAttribute('visible', 'false');
+				b89Floor3.setAttribute('visible', 'true');
+				
+				cp16Floor3.setAttribute('visible', 'false');
+				cp33Floor3.setAttribute('visible', 'true');
+			})
+			
 			cp17Floor3.addEventListener('click', function() {
 				cp4Floor3.setAttribute('visible', 'false');
 				cp5Floor3.setAttribute('visible', 'false');
@@ -1449,11 +1535,13 @@
 				cp16Floor3.setAttribute('visible', 'true');
 				cp22Floor3.setAttribute('visible', 'false');
 				cp18Floor3.setAttribute('visible', 'true');
+				cp33Floor3.setAttribute('visible', 'false');
 				
 				b16Floor3.setAttribute('visible', 'false');
 				b17Floor3.setAttribute('visible', 'true');
 				b4Floor3.setAttribute('visible', 'false');
 			})
+			
 			//Hallway checkpoint
 			cp18Floor3.addEventListener('click', function() {
 				cp3Floor3.setAttribute('visible', 'false');
@@ -1463,6 +1551,7 @@
 				cp17Floor3.setAttribute('visible', 'true');
 				cp22Floor3.setAttribute('visible', 'true');
 				cp23Floor3.setAttribute('visible', 'false');
+				cp30Floor3.setAttribute('visible', 'false');
 				
 				b17Floor3.setAttribute('visible', 'false');
 				b3Floor3.setAttribute('visible', 'false');
@@ -1476,11 +1565,37 @@
 				cp17Floor3.setAttribute('visible', 'false');
 				cp18Floor3.setAttribute('visible', 'true');
 				cp23Floor3.setAttribute('visible', 'true');
+				cp30Floor3.setAttribute('visible', 'true');
+				cp31Floor3.setAttribute('visible', 'false');
+				cp32Floor3.setAttribute('visible', 'false');
+				cp24Floor3.setAttribute('visible', 'false');
 				
 				b4Floor3.setAttribute('visible', 'false');
 				b18Floor3.setAttribute('visible', 'true');
 				b19Floor3.setAttribute('visible', 'false');
+				b81Floor3.setAttribute('visible', 'false');
 			})
+			
+			cp30Floor3.addEventListener('click', function() {
+				cp22Floor3.setAttribute('visible', 'true');
+				cp23Floor3.setAttribute('visible', 'false');
+				cp31Floor3.setAttribute('visible', 'true');
+				cp18Floor3.setAttribute('visible', 'false');
+				
+				b18Floor3.setAttribute('visible', 'false');
+				b80Floor3.setAttribute('visible', 'false');
+				b81Floor3.setAttribute('visible', 'true');
+			})
+			
+			cp31Floor3.addEventListener('click', function() {
+				b81Floor3.setAttribute('visible', 'false');
+				b80Floor3.setAttribute('visible', 'true');
+				
+				cp22Floor3.setAttribute('visible', 'false');
+				cp30Floor3.setAttribute('visible', 'true');
+			})
+			
+			
 			//purple checkpoint
 			cp23Floor3.addEventListener('click', function() {
 				cp18Floor3.setAttribute('visible', 'false');
@@ -1488,10 +1603,22 @@
 				cp24Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'false');
 				cp22Floor3.setAttribute('visible', 'true');
+				cp30Floor3.setAttribute('visible', 'false');
+				cp32Floor3.setAttribute('visible', 'true');
 				
 				b18Floor3.setAttribute('visible', 'false');
 				b19Floor3.setAttribute('visible', 'true');
 				b20Floor3.setAttribute('visible', 'false');
+				b83Floor3.setAttribute('visible', 'false');
+				
+			})
+			
+			cp32Floor3.addEventListener('click', function() {
+				cp22Floor3.setAttribute('visible', 'false');
+				cp24Floor3.setAttribute('visible', 'false');
+				
+				b19Floor3.setAttribute('visible', 'false');
+				b83Floor3.setAttribute('visible', 'true');
 			})
 			//orange checkpoint
 			cp24Floor3.addEventListener('click', function() {
@@ -1499,6 +1626,7 @@
 				cp23Floor3.setAttribute('visible', 'true');
 				cp27Floor3.setAttribute('visible', 'true');
 				cp25Floor3.setAttribute('visible', 'false');
+				cp32Floor3.setAttribute('visible', 'false');
 				
 				b19Floor3.setAttribute('visible', 'false');
 				b20Floor3.setAttribute('visible', 'true');
@@ -1633,6 +1761,48 @@
 				mainCursor.setAttribute('color', 'yellow');
 			})
 			cp29Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			cp30Floor3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			cp30Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			cp31Floor3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			cp31Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			cp32Floor3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			cp32Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			cp33Floor3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			cp33Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			cp34Floor3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			cp34Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			cp35Floor3.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			cp35Floor3.addEventListener('mouseleave', function() {
+				mainCursor.setAttribute('color', 'black');
+			})
+			lookAtMac.addEventListener('mouseenter', function() {
+				mainCursor.setAttribute('color', 'yellow');
+			})
+			lookAtMac.addEventListener('mouseleave', function() {
 				mainCursor.setAttribute('color', 'black');
 			})
 
